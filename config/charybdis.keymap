@@ -1,8 +1,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/rgb.h>
 
 &lt {
     tapping-term-ms = <200>;
@@ -15,35 +15,12 @@
 
 / {
     macros {
-        To1_macro: To1_macro {
-            compatible = "zmk,behavior-macro";
-            label = "To1_macro";
-            #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_EFF &rgb_ug RGB_COLOR_HSB(128,100,50) &to 0>;
-        };
-
-        To0_macro: To0_macro {
-            compatible = "zmk,behavior-macro";
-            label = "To0_macro";
-            #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_EFR &to 0>;
-        };
-
-        To2_macro: To2_macro {
-            compatible = "zmk,behavior-macro";
-            label = "To2_macro";
-            #binding-cells = <0>;
-            bindings =
-                <&to 6>,
-                <&macro_wait_time 30>,
-                <&rgb_ug RGB_COLOR_HSB(250,100,50)>;
-        };
-
         dve_skobki: dve_skobki {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LPAR &kp RPAR &kp LEFT>;
             label = "DVE_SKOBKI";
+            wait-ms = <300>;
         };
 
         mc_dvoeto_ravno: mc_dvoeto_ravno {
@@ -130,7 +107,13 @@
         rus_kavychka: rus_kavychka {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(N8)) &kp LS(SQT) &kp LS(LA(N9))>;
+            bindings =
+                <&kp LS(LA(N8))>,
+                <&macro_wait_time 100>,
+                <&kp LS(SQT)>,
+                <&macro_wait_time 100>,
+                <&kp LS(LA(N9))>;
+
             label = "RUS_KAVYCHKA";
         };
     };
@@ -286,6 +269,11 @@
             bindings = <&kp TAB>;
             key-positions = <43 44>;
         };
+
+        cb_power_off {
+            bindings = <&ext_power EP_OFF>;
+            key-positions = <10 35>;
+        };
     };
 
     keymap {
@@ -293,9 +281,9 @@
 
         Eng {
             bindings = <
-&kp ESC                               &kp SLASH  &kp ASTRK  &kp SEMICOLON          &kp LS(SEMICOLON)  &kp EQUAL       &To1_macro   &none        &mc_eng        &mc_rus           &Hold_tab EXCLAMATION QUESTION  &kp LC(Z)
+&kp ESC                               &kp SLASH  &kp ASTRK  &kp SEMICOLON          &kp LS(SEMICOLON)  &kp EQUAL       &none        &none        &mc_eng        &mc_rus           &Hold_tab EXCLAMATION QUESTION  &kp LC(Z)
 &Hold_tab DOUBLE_QUOTES SINGLE_QUOTE  &kp Q      &kp W      &kp F                  &kp P              &kp G           &kp J        &kp L        &kp U          &kp Y             &kp P                           &kp BSLH
-&kp PLUS                              &kp A      &kp R      &lt 2 S                &lt 8 T            &kp G           &kp H        &kp N        &kp E          &kp I             &kp O                           &kp SQT
+&kp PLUS                              &kp A      &kp R      &lt 2 S                &lt 8 T            &kp G           &kp H        &kp N        &kp E          &kp I             &kp O                           &kp TAB
 &lt 6 KP_MINUS                        &kp Z      &kp X      &kp C                  &kp V              &lt 6 B         &kp K        &kp M        &kp LESS_THAN  &kp GREATER_THAN  &kp LS(BACKSLASH)               &kp UNDER
                                                             &Hold_tab LSHFT ENTER  &kp LEFT_CONTROL   &kp LEFT_ALT    &lt 4 COMMA  &lt 3 SPACE
                                                                                    &kp BACKSPACE      &kp DELETE      &kp KP_DOT
@@ -337,12 +325,12 @@
 
         digits {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans  &trans  &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS   &kp N7  &kp N8  &kp N9  &kp STAR  &kp CARET
-&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp N4  &kp N5  &kp N6  &kp FSLH  &kp EQUAL
-&trans  &trans  &trans  &trans  &trans  &trans    &kp N0     &kp N1  &kp N2  &kp N3  &kp DOT   &kp ENTER
-                        &trans  &trans  &trans    &trans     &trans
-                                &trans  &trans    &trans
+&tog 4      &kp TILDE  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)    &trans     &trans  &trans  &trans  &trans    &trans
+&kp INSERT  &trans     &trans            &trans            &trans            &trans        &kp PLUS   &kp N7  &kp N8  &kp N9  &kp STAR  &kp CARET
+&kp LS(N7)  &trans     &trans            &trans            &trans            &trans        &kp MINUS  &kp N4  &kp N5  &kp N6  &kp FSLH  &kp EQUAL
+&trans      &kp GRAVE  &kp BACKSLASH     &trans            &trans            &trans        &kp N0     &kp N1  &kp N2  &kp N3  &kp DOT   &kp ENTER
+                                         &trans            &trans            &trans        &trans     &trans
+                                                           &trans            &trans        &trans
             >;
         };
 
