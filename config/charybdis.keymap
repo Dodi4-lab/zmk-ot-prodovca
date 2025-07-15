@@ -126,6 +126,13 @@
             bindings = <&kp COMMA>;
             label = "MC_COMMA";
         };
+
+        rus_kavychka: rus_kavychka {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(N8)) &kp LS(SQT) &kp LS(LA(N9))>;
+            label = "RUS_KAVYCHKA";
+        };
     };
 
     behaviors {
@@ -160,6 +167,15 @@
             label = "TAP_DANCE_TV_ZNAK";
             #binding-cells = <0>;
             bindings = <&kp M>, <&kp RIGHT_BRACKET>;
+        };
+
+        bh_rus_kavychka: bh_rus_kavychka {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BH_RUS_KAVYCHKA";
+            bindings = <&rus_kavychka>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -277,10 +293,10 @@
 
         Eng {
             bindings = <
-&kp ESC                               &kp SLASH  &kp ASTRK  &kp SEMICOLON          &kp LS(SEMICOLON)  &kp EQUAL       &kp N6       &kp N7       &mc_eng        &mc_rus           &Hold_tab EXCLAMATION QUESTION  &kp LC(Z)
+&kp ESC                               &kp SLASH  &kp ASTRK  &kp SEMICOLON          &kp LS(SEMICOLON)  &kp EQUAL       &To1_macro   &none        &mc_eng        &mc_rus           &Hold_tab EXCLAMATION QUESTION  &kp LC(Z)
 &Hold_tab DOUBLE_QUOTES SINGLE_QUOTE  &kp Q      &kp W      &kp F                  &kp P              &kp G           &kp J        &kp L        &kp U          &kp Y             &kp P                           &kp BSLH
 &kp PLUS                              &kp A      &kp R      &lt 2 S                &lt 8 T            &kp G           &kp H        &kp N        &kp E          &kp I             &kp O                           &kp SQT
-&lt 6 KP_MINUS                        &kp Z      &kp X      &kp C                  &kp V              &lt 6 B         &kp K        &kp M        &kp LESS_THAN  &kp GREATER_THAN  &kp B                           &kp UNDER
+&lt 6 KP_MINUS                        &kp Z      &kp X      &kp C                  &kp V              &lt 6 B         &kp K        &kp M        &kp LESS_THAN  &kp GREATER_THAN  &kp LS(BACKSLASH)               &kp UNDER
                                                             &Hold_tab LSHFT ENTER  &kp LEFT_CONTROL   &kp LEFT_ALT    &lt 4 COMMA  &lt 3 SPACE
                                                                                    &kp BACKSPACE      &kp DELETE      &kp KP_DOT
             >;
@@ -288,12 +304,12 @@
 
         Russian {
             bindings = <
-&kp ESC    &kp FSLH  &kp STAR  &kp LS(NUMBER_4)  &kp LS(NUMBER_6)     &kp EQUAL    &trans  &trans              &trans     &trans   &trans     &trans
-&kp GRAVE  &kp Q     &kp W     &kp E             &kp R                &kp T        &kp Y   &kp U               &kp I      &kp O    &kp P      &kp LBKT
-&kp PLUS   &kp A     &kp S     &kp D             &kp F                &kp G        &kp H   &kp J               &kp K      &kp L    &kp SEMI   &kp APOS
-&kp MINUS  &kp Z     &kp X     &kp C             &kp V                &kp B        &kp N   &tap_dance_tv_znak  &kp COMMA  &kp DOT  &kp TILDE  &trans
-                               &trans            &rus_cntr_layer_eng  &trans       &trans  &trans
-                                                 &trans               &trans       &trans
+&kp ESC                          &kp FSLH  &kp STAR  &kp LS(NUMBER_4)  &kp LS(NUMBER_6)     &kp EQUAL    &trans         &trans              &trans     &trans   &trans     &trans
+&bh_rus_kavychka 0 LS(NUMBER_2)  &kp Q     &kp W     &kp E             &kp R                &kp T        &kp Y          &kp U               &kp I      &kp O    &kp P      &kp LBKT
+&kp PLUS                         &kp A     &kp S     &kp D             &kp F                &kp G        &kp H          &kp J               &kp K      &kp L    &kp SEMI   &kp APOS
+&kp MINUS                        &kp Z     &kp X     &kp C             &kp V                &kp B        &kp N          &tap_dance_tv_znak  &kp COMMA  &kp DOT  &kp TILDE  &trans
+                                                     &trans            &rus_cntr_layer_eng  &trans       &kp LS(SLASH)  &trans
+                                                                       &trans               &trans       &kp SLASH
             >;
         };
 
