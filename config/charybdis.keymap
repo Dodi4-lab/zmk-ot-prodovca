@@ -265,7 +265,7 @@
 
         Eng {
             bindings = <
-&kp ESC                               &kp SLASH  &kp ASTRK  &kp COLON              &kp LS(SEMICOLON)  &kp KP_EQUAL    &kp N6              &kp N7       &mc_eng        &mc_rus           &Hold_tab EXCLAMATION QUESTION  &kp LC(Z)
+&kp ESC                               &kp SLASH  &kp ASTRK  &kp COLON              &kp LS(SEMICOLON)  &kp EQUAL       &kp N6              &kp N7       &mc_eng        &mc_rus           &Hold_tab EXCLAMATION QUESTION  &kp LC(Z)
 &Hold_tab DOUBLE_QUOTES SINGLE_QUOTE  &kp Q      &kp W      &kp F                  &kp P              &kp G           &kp J               &kp L        &kp U          &kp Y             &kp P                           &kp BSLH
 &kp PLUS                              &kp A      &kp R      &lt 2 S                &lt 8 T            &kp G           &kp H               &kp N        &kp E          &kp I             &kp O                           &kp SQT
 &lt 6 KP_MINUS                        &kp Z      &kp X      &kp C                  &kp V              &lt 6 B         &kp K               &kp M        &kp LESS_THAN  &kp GREATER_THAN  &kp LS(BACKSLASH)               &kp UNDER
