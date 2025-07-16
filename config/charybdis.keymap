@@ -182,7 +182,7 @@
 
         cb_cntrl_shift {
             bindings = <&sk LS(LEFT_CONTROL)>;
-            key-positions = <53 54>;
+            key-positions = <49 50>;
         };
 
         cb_cntrl_alt {
@@ -192,7 +192,7 @@
 
         cb_cntr_back {
             bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <50 49>;
+            key-positions = <49 53>;
         };
 
         cb_kv_skobki {
