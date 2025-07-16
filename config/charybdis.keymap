@@ -172,7 +172,7 @@
 
         cb_func_layer {
             bindings = <&mo 5>;
-            key-positions = <48 49>;
+            key-positions = <48 53 49>;
         };
 
         cb_dvoet_ravno {
