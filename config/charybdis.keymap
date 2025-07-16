@@ -182,12 +182,12 @@
 
         cb_cntrl_shift {
             bindings = <&sk LS(LEFT_CONTROL)>;
-            key-positions = <49 50>;
+            key-positions = <50 54>;
         };
 
         cb_cntrl_alt {
             bindings = <&kp LC(LEFT_ALT)>;
-            key-positions = <54 50>;
+            key-positions = <50 49>;
         };
 
         cb_cntr_back {
@@ -336,12 +336,12 @@
 
         Functions {
             bindings = <
-&tog 5      &trans         &trans         &trans   &trans   &kp LA(F4)              &trans  &trans                &trans                &trans                &kp LA(PAUSE_BREAK)   &trans
-&trans      &kp F1         &tap_dance_f2  &kp F3   &kp F4   &kp LA(LC(NUMBER_2))    &trans  &trans                &kp LC(F12)           &trans                &trans                &kp LC(RIGHT_BRACKET)
-&kp LC(F5)  &kp F5         &kp F6         &kp F7   &kp F8   &kp LC(LS(UP))          &trans  &kp LS(LC(NUMBER_1))  &kp LS(LC(NUMBER_2))  &kp LC(LS(NUMBER_3))  &kp LS(LC(NUMBER_4))  &kp LS(LC(N5))
-&mc_quick   &tap_dance_f9  &kp F10        &kp F11  &kp F12  &kp LS(LC(DOWN))        &trans  &kp LC(NUMBER_1)      &kp LC(NUMBER_2)      &kp LC(NUMBER_3)      &kp LC(NUMBER_4)      &kp LC(NUMBER_5)
-                                          &trans   &trans   &trans                  &trans  &trans
-                                                   &trans   &trans                  &trans
+&tog 5      &trans         &trans               &trans   &trans   &kp LA(F4)              &trans  &trans                &trans                &trans                &kp LA(PAUSE_BREAK)   &trans
+&trans      &kp F1         &Hold_tab LC(F2) F2  &kp F3   &kp F4   &kp LA(LC(NUMBER_2))    &trans  &trans                &kp LC(F12)           &trans                &trans                &kp LC(RIGHT_BRACKET)
+&kp LC(F5)  &kp F5         &kp F6               &kp F7   &kp F8   &kp LC(LS(UP))          &trans  &kp LS(LC(NUMBER_1))  &kp LS(LC(NUMBER_2))  &kp LC(LS(NUMBER_3))  &kp LS(LC(NUMBER_4))  &kp LS(LC(N5))
+&mc_quick   &tap_dance_f9  &kp F10              &kp F11  &kp F12  &kp LS(LC(DOWN))        &trans  &kp LC(NUMBER_1)      &kp LC(NUMBER_2)      &kp LC(NUMBER_3)      &kp LC(NUMBER_4)      &kp LC(NUMBER_5)
+                                                &trans   &trans   &trans                  &trans  &trans
+                                                         &trans   &trans                  &trans
             >;
         };
 
