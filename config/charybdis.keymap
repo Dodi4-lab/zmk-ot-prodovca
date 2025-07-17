@@ -116,6 +116,14 @@
 
             label = "RUS_KAVYCHKA";
         };
+
+        dbl_click: dbl_click {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp LCLK>, <&macro_wait_time 100>, <&mkp LCLK>;
+
+            label = "DBL_CLICK";
+        };
     };
 
     behaviors {
@@ -173,6 +181,7 @@
         cb_func_layer {
             bindings = <&mo 5>;
             key-positions = <48 53 49>;
+            layers = <8>;
         };
 
         cb_dvoet_ravno {
@@ -281,11 +290,11 @@
 
         Eng {
             bindings = <
-&kp ESC                               &kp SLASH  &kp ASTRK  &kp SEMICOLON          &kp LS(SEMICOLON)  &kp EQUAL       &none        &none         &mc_eng        &mc_rus           &Hold_tab EXCLAMATION QUESTION  &kp LC(Z)
-&Hold_tab DOUBLE_QUOTES SINGLE_QUOTE  &kp Q      &kp W      &kp F                  &kp P              &kp G           &kp J        &kp L         &kp U          &kp Y             &kp P                           &kp BSLH
-&kp PLUS                              &kp A      &kp R      &lt 2 S                &lt 8 T            &kp D           &kp H        &kp N         &kp E          &kp I             &kp O                           &kp TAB
-&kp MINUS                             &kp Z      &kp X      &kp C                  &kp V              &lt 6 B         &kp K        &kp M         &kp LESS_THAN  &kp GREATER_THAN  &kp LS(BACKSLASH)               &kp UNDER
-                                                            &Hold_tab LSHFT ENTER  &kp LEFT_CONTROL   &kp LEFT_ALT    &lt 4 COMMA  &lt 3 KP_DOT
+&kp ESC                               &kp SLASH  &kp ASTRK  &kp SEMICOLON          &kp LS(SEMICOLON)  &kp EQUAL       &none        &none        &mc_eng        &mc_rus           &Hold_tab QUESTION QUESTION  &kp LC(Z)
+&Hold_tab DOUBLE_QUOTES SINGLE_QUOTE  &kp Q      &kp W      &kp F                  &kp P              &kp G           &kp J        &kp L        &kp U          &kp Y             &kp P                        &kp BSLH
+&kp PLUS                              &kp A      &lt 2 R    &lt 5 S                &lt 4 T            &lt 8 D         &kp H        &lt 4 N      &lt 5 E        &kp I             &kp O                        &kp TAB
+&kp MINUS                             &kp Z      &kp X      &kp C                  &kp V              &lt 6 B         &kp K        &kp M        &kp LESS_THAN  &kp GREATER_THAN  &kp LS(BACKSLASH)            &kp UNDER
+                                                            &Hold_tab LSHFT ENTER  &kp LEFT_CONTROL   &kp LEFT_ALT    &lt 4 COMMA  &lt 3 SLASH
                                                                                    &kp BACKSPACE      &kp DELETE      &kp SPACE
             >;
         };
@@ -294,10 +303,10 @@
             bindings = <
 &kp ESC                          &kp FSLH  &kp STAR  &kp LS(NUMBER_4)  &kp LS(NUMBER_6)     &kp EQUAL    &trans         &trans              &trans     &trans   &trans     &trans
 &bh_rus_kavychka 0 LS(NUMBER_2)  &kp Q     &kp W     &kp E             &kp R                &kp T        &kp Y          &kp U               &kp I      &kp O    &kp P      &kp LBKT
-&kp PLUS                         &kp A     &kp S     &kp D             &kp F                &kp G        &kp H          &kp J               &kp K      &kp L    &kp SEMI   &kp APOS
+&kp PLUS                         &kp A     &kp S     &lt 5 D           &lt 4 F              &lt 8 G      &kp H          &lt 4 J             &lt 5 K    &kp L    &kp SEMI   &kp APOS
 &kp MINUS                        &kp Z     &kp X     &kp C             &kp V                &kp B        &kp N          &tap_dance_tv_znak  &kp COMMA  &kp DOT  &kp TILDE  &trans
-                                                     &trans            &rus_cntr_layer_eng  &trans       &kp LS(SLASH)  &trans
-                                                                       &trans               &trans       &kp SLASH
+                                                     &trans            &rus_cntr_layer_eng  &trans       &kp LS(SLASH)  &kp SLASH
+                                                                       &trans               &trans       &kp SPACE
             >;
         };
 
@@ -358,12 +367,12 @@
 
         AUTO-MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &mkp LCLK  &mkp RCLK    &trans  &trans
-                                &trans     &trans       &trans
+&trans  &trans  &trans  &trans      &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans      &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans      &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans      &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                        &dbl_click  &mkp LCLK  &mkp RCLK    &trans  &trans
+                                    &trans     &trans       &trans
             >;
         };
 
