@@ -194,12 +194,19 @@
 
         trackball_cursor: trackball_cursor {
             compatible = "zmk,behavior-input-two-axis";
-            label = "TRACKBALL_CURSOR";
-            #binding-cells = <1>;
-            x-input-code = <4>;
-            y-input-code = <4>;
-            time-to-max-speed-ms = <150>;
-            acceleration-exponent = <1>;
+            #input-cells = <2>;
+            x-input-code = <INPUT_REL_X>;  // Движение по горизонтали
+            y-input-code = <INPUT_REL_Y>;  // Движение по вертикали
+            time-to-max-speed-ms = <150>;  // Время разгона курсора
+            acceleration-exponent = <1>;   // Кривая ускорения
+        };
+    };
+
+    sensors {
+        compatible = "zmk,input-listener";
+        trackball {
+            sensor = <&trackball>;
+            input = <&trackball_cursor 1 1>;  // Чувствительность (можно регулировать)
         };
     };
 
