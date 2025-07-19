@@ -93,11 +93,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap &to 0 &kp A>,
+                <&macro_tap &to 0>,
                 <&macro_press &kp LCTRL>,
                 <&macro_pause_for_release>,
                 <&macro_release &kp LCTRL>,
-                <&macro_tap &to 1 &kp B>;
+                <&macro_tap &to 1>;
 
             label = "RUS_CNTR_LAYER_ENG";
         };
