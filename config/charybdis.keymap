@@ -206,7 +206,7 @@
     sensors {
         compatible = "zmk,input-listener";
         trackball {
-            sensor = <&trackball>;
+            sensor = <&trackball@0>;
             input = <&trackball_cursor 1 1>;  // Чувствительность (можно регулировать)
         };
     };
