@@ -9,7 +9,9 @@
     quick-tap-ms = <150>;
 };
 
-&key_repeat {
+&mmv { time-to-max-speed-ms = <150>; };
+
+&inc_dec_kp {
 };
 
 / {
