@@ -192,15 +192,28 @@
             tapping-term-ms = <200>;
         };
 
-       // trackball_cursor: trackball_cursor {
-       //     compatible = "zmk,behavior-input-two-axis";
-       //     #input-cells = <2>;
-     //       #binding-cells = <0>;
-     //       x-input-code = <INPUT_REL_X>;  // Движение по горизонтали
-      //      y-input-code = <INPUT_REL_Y>;  // Движение по вертикали
-      //      time-to-max-speed-ms = <150>;  // Время разгона курсора
-      //      acceleration-exponent = <1>;   // Кривая ускорения
-      //  };
+        trackball_cursor: trackball_cursor {
+            compatible = "zmk,behavior-input-two-axis";
+            #input-cells = <2>;
+            #binding-cells = <0>;
+            x-input-code = <INPUT_REL_X>;  // Движение по горизонтали
+            y-input-code = <INPUT_REL_Y>;  // Движение по вертикали
+            time-to-max-speed-ms = <150>;  // Время разгона курсора
+            acceleration-exponent = <1>;   // Кривая ускорения
+        };
+        trackball_left_right: trackball_left_right {
+            compatible = "zmk,behavior-key-press";
+            #input-cells = <0>;
+            bindings = <&kp LEFT>, <&kp RIGHT>;
+            axis = <INPUT_REL_X>;  // Горизонтальное движение → стрелки влево/вправо
+        };
+        
+        trackball_up_down: trackball_up_down {
+            compatible = "zmk,behavior-key-press";
+            #input-cells = <0>;
+            bindings = <&kp UP>, <&kp DOWN>;
+            axis = <INPUT_REL_Y>;  // Вертикальное движение → стрелки вверх/вниз
+        };
     };
 
     //sensors {
