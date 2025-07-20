@@ -58,8 +58,3 @@
                          LED_COLOR_ID_BLUE>;
     };
 };
-/ {
-	vtrackball: virtual_input_trackball {
-		compatible = "zmk,virtual-input";
-	};
-};
