@@ -9,6 +9,7 @@
     quick-tap-ms = <150>;
 };
 
+
 / {
     macros {
         dve_skobki: dve_skobki {
