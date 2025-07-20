@@ -359,7 +359,7 @@
             key-positions = <43 44 45>;
         };
     };
-    trackball_listener {
+  /*  trackball_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
         layers = <>;
@@ -404,7 +404,7 @@
         compatible = "zmk,input-behavior-tog-layer";
         #binding-cells = <1>;
         time-to-live-ms = <750>;
-    };
+    };*/
 
     keymap {
         compatible = "zmk,keymap";
