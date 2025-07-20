@@ -107,7 +107,7 @@
     status = "okay";
 };
 
-&spiv3 {
+&spi3 {
     status = "okay";
 };
 
