@@ -206,7 +206,7 @@
             compatible = "zmk,behavior-key-press";
             #input-cells = <0>;
             bindings = <&kp LEFT>, <&kp RIGHT>;
-
+            #binding-cells = <2>;
             axis = <INPUT_REL_X>;  // Горизонтальное движение → стрелки влево/вправо
             label = "TRACKBALL_LEFT_RIGHT";
         };
@@ -215,7 +215,7 @@
             compatible = "zmk,behavior-key-press";
             #input-cells = <0>;
             bindings = <&kp UP>, <&kp DOWN>;
-
+            #binding-cells = <2>;
             axis = <INPUT_REL_Y>;  // Вертикальное движение → стрелки вверх/вниз
             label = "TRACKBALL_UP_DOWN";
         };
