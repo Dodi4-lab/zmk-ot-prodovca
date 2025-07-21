@@ -58,9 +58,6 @@
         scroll-layers = <8>;
         snipe-layers = <2>;
         automouse-layer = <7>;
-        evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_X>;
-        y-input-code = <INPUT_REL_Y>;
     };
 };
 
@@ -110,5 +107,9 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+	layers = <>;
+        evt-type = <INPUT_EV_REL>;
+        x-input-code = <INPUT_REL_X>;
+        y-input-code = <INPUT_REL_Y>;
     };
 };
