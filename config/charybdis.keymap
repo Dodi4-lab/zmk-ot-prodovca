@@ -211,6 +211,15 @@
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
         };
+
+        x_y: x_y {
+            compatible = "zmk,behavior-input-two-axis";
+            label = "X_Y";
+            #binding-cells = <1>;
+            x-input-code = <0>;
+            y-input-code = <1>;
+            time-to-max-speed-ms = <150>;
+        };
     };
 
     combos {
