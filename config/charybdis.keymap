@@ -9,7 +9,6 @@
     quick-tap-ms = <150>;
 };
 
-
 / {
     macros {
         dve_skobki: dve_skobki {
@@ -421,7 +420,7 @@
 
         Functions {
             bindings = <
-&tog 5      &trans         &trans               &trans   &trans   &kp LA(F4)              &trans  &trans                &trans                &trans                &kp LA(PAUSE_BREAK)   &trans
+&tog 5      &trans         &trans               &trans   &trans   &kp LA(F4)              &trans  &trans                &trans                &kp PRINTSCREEN       &kp LA(PRINTSCREEN)   &trans
 &trans      &kp F1         &Hold_tab LC(F2) F2  &kp F3   &kp F4   &kp LA(LC(NUMBER_2))    &trans  &trans                &kp LC(F12)           &trans                &trans                &kp LC(RIGHT_BRACKET)
 &kp LC(F5)  &kp F5         &kp F6               &kp F7   &kp F8   &kp LC(LS(UP))          &trans  &kp LS(LC(NUMBER_1))  &kp LS(LC(NUMBER_2))  &kp LC(LS(NUMBER_3))  &kp LS(LC(NUMBER_4))  &kp LS(LC(N5))
 &mc_quick   &tap_dance_f9  &kp F10              &kp F11  &kp F12  &kp LS(LC(DOWN))        &trans  &kp LC(NUMBER_1)      &kp LC(NUMBER_2)      &kp LC(NUMBER_3)      &kp LC(NUMBER_4)      &kp LC(NUMBER_5)
