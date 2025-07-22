@@ -399,7 +399,7 @@
             bindings = <
 &kp ESC                               &kp SLASH  &kp ASTRK  &kp SEMICOLON          &kp LS(SEMICOLON)  &kp EQUAL       &none                &none      &mc_eng        &mc_rus           &Hold_tab QUESTION EXCL  &kp LC(Z)
 &Hold_tab DOUBLE_QUOTES SINGLE_QUOTE  &kp Q      &kp W      &kp F                  &kp P              &kp G           &kp J                &kp L      &kp U          &kp Y             &kp P                    &kp BSLH
-&kp PLUS                              &kp A      &lt 2 R    &lt 5 S                &lt 4 T            &lt 8 D         &kp H                &lt 4 N    &lt 5 E        &lt 7 I           &kp O                    &kp TAB
+&kp PLUS                              &kp A      &lt 0 R    &lt 5 S                &lt 4 T            &lt 8 D         &kp H                &lt 4 N    &lt 5 E        &lt 7 I           &kp O                    &kp TAB
 &kp MINUS                             &kp Z      &kp X      &kp C                  &kp V              &lt 6 B         &kp K                &kp M      &kp LESS_THAN  &kp GREATER_THAN  &kp LS(BACKSLASH)        &kp UNDER
                                                             &Hold_tab LSHFT ENTER  &kp LEFT_CONTROL   &kp LEFT_ALT    &lt 4 COMMA          &lt 3 DOT
                                                                                    &kp BACKSPACE      &kp DELETE      &Hold_tab TAB SPACE
@@ -419,12 +419,12 @@
 
         snipe-layers {
             bindings = <
-&trans  &trans  &trans  &trans  &trans     &trans       &trans     &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans       &trans     &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans       &mkp LCLK  &mkp RCLK  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans       &trans     &trans     &trans  &trans  &trans  &trans
-                        &trans  &mkp LCLK  &mkp RCLK    &mkp LCLK  &mkp RCLK
-                                &trans     &trans       &trans
+&trans  &trans  &trans      &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans      &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans      &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &dbl_click  &mkp LCLK  &mkp RCLK  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans     &trans     &trans    &trans  &trans
+                                       &trans     &trans    &trans
             >;
         };
 
@@ -474,12 +474,12 @@
 
         AUTO-MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans      &trans                           &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans      &trans                           &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans      &trans                           &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans      &trans                           &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                        &dbl_click  &bh_mc_cntr_lclick_mouse 0 LCLK  &mkp RCLK    &trans  &trans
-                                    &trans                           &trans       &trans
+&trans  &trans  &trans      &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans      &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans      &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &dbl_click  &mkp LCLK  &mkp RCLK  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans     &trans     &trans    &trans  &trans
+                                       &trans     &trans    &trans
             >;
         };
 
