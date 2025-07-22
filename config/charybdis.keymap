@@ -399,8 +399,8 @@
             bindings = <
 &kp ESC                               &kp SLASH  &kp ASTRK  &kp SEMICOLON          &kp LS(SEMICOLON)  &kp EQUAL       &none                &none      &mc_eng        &mc_rus           &Hold_tab QUESTION EXCL  &kp LC(Z)
 &Hold_tab DOUBLE_QUOTES SINGLE_QUOTE  &kp Q      &kp W      &kp F                  &kp P              &kp G           &kp J                &kp L      &kp U          &kp Y             &kp P                    &kp BSLH
-&kp PLUS                              &kp A      &lt 0 R    &lt 5 S                &lt 4 T            &lt 8 D         &kp H                &lt 4 N    &lt 5 E        &lt 7 I           &kp O                    &kp TAB
-&kp MINUS                             &kp Z      &kp X      &kp C                  &kp V              &lt 6 B         &kp K                &kp M      &kp LESS_THAN  &kp GREATER_THAN  &kp LS(BACKSLASH)        &kp UNDER
+&kp PLUS                              &kp A      &kp R      &lt 5 S                &lt 4 T            &lt 8 D         &kp H                &lt 4 N    &lt 5 E        &lt 7 I           &kp O                    &none
+&kp MINUS                             &kp Z      &lt 7 X    &kp C                  &kp V              &lt 6 B         &kp K                &kp M      &kp LESS_THAN  &kp GREATER_THAN  &kp LS(BACKSLASH)        &kp UNDER
                                                             &Hold_tab LSHFT ENTER  &kp LEFT_CONTROL   &kp LEFT_ALT    &lt 4 COMMA          &lt 3 DOT
                                                                                    &kp BACKSPACE      &kp DELETE      &Hold_tab TAB SPACE
             >;
@@ -411,7 +411,7 @@
 &kp ESC                          &kp FSLH  &kp STAR  &kp LS(NUMBER_4)  &kp LS(NUMBER_6)     &kp EQUAL    &trans         &trans              &trans     &trans   &trans     &trans
 &bh_rus_kavychka 0 LS(NUMBER_2)  &kp Q     &kp W     &kp E             &kp R                &kp T        &kp Y          &kp U               &kp I      &kp O    &kp P      &kp LBKT
 &kp PLUS                         &kp A     &kp S     &lt 5 D           &lt 4 F              &lt 8 G      &kp H          &lt 4 J             &lt 5 K    &lt 7 L  &kp SEMI   &kp APOS
-&kp MINUS                        &kp Z     &kp X     &kp C             &kp V                &kp B        &kp N          &tap_dance_tv_znak  &kp COMMA  &kp DOT  &kp GRAVE  &trans
+&kp MINUS                        &kp Z     &trans    &kp C             &kp V                &trans       &kp N          &tap_dance_tv_znak  &kp COMMA  &kp DOT  &kp GRAVE  &trans
                                                      &trans            &rus_cntr_layer_eng  &trans       &kp LS(SLASH)  &lt 3 SLASH
                                                                        &trans               &trans       &trans
             >;
