@@ -383,17 +383,17 @@
 
         cb_rus {
             bindings = <&mc_eng>;
-            key-positions = <40 39 38>;
+            key-positions = <40 38>;
         };
 
         cb_eng {
             bindings = <&mc_rus>;
-            key-positions = <43 44 45>;
+            key-positions = <43 45>;
         };
 
         cb_f13 {
             bindings = <&kp F15>;
-            key-positions = <26 27 28>;
+            key-positions = <26 28>;
         };
     };
 
