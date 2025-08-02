@@ -222,12 +222,6 @@
             y-input-code = <1>;
             time-to-max-speed-ms = <150>;
         };
-
-        ib_toggle_layer: ib_toggle_layer {
-            compatible = "zmk,behavior-toggle-layer";
-            label = "IB_TOGGLE_LAYER";
-            #binding-cells = <1>;
-        };
     };
 
     combos {
