@@ -159,6 +159,13 @@
 
             label = "CNTRL_LEFT_CLICK";
         };
+
+        mc_rulemak: mc_rulemak {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(N9)) &to 9>;
+            label = "MC_RULEMAK";
+        };
     };
 
     behaviors {
@@ -393,19 +400,26 @@
             key-positions = <19 32>;
         };
 
-        cb_rus {
+        cb_eng {
             bindings = <&mc_eng>;
             key-positions = <40 38>;
         };
 
-        cb_eng {
+        cb_russ {
             bindings = <&mc_rus>;
             key-positions = <43 45>;
+            layers = <9>;
         };
 
         cb_f13 {
             bindings = <&kp F15>;
             key-positions = <26 28>;
+        };
+
+        rulemak {
+            bindings = <&mc_rulemak>;
+            key-positions = <43 45>;
+            layers = <0 1 2 3 4 5 6 7 8>;
         };
     };
 
@@ -508,6 +522,17 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans
                                 &trans  &trans    &trans
+            >;
+        };
+
+        Rulemak {
+            bindings = <
+&kp ESC                          &kp FSLH  &kp STAR            &kp LS(NUMBER_4)  &kp LS(NUMBER_6)     &kp EQUAL    &trans         &trans       &trans              &trans   &trans     &trans
+&bh_rus_kavychka 0 LS(NUMBER_2)  &kp Z     &kp SEMI            &kp A             &kp G                &kp U        &kp Q          &kp K        &kp E               &kp S    &kp DOT    &kp O
+&kp PLUS                         &kp F     &lt 2 H             &lt 5 C           &lt 4 N              &lt 8 L      &kp X          &lt 4 Y      &lt 5 T             &lt 7 B  &kp J      &kp APOS
+&kp MINUS                        &kp P     &lt 7 LEFT_BRACKET  &kp W             &kp D                &kp COMMA    &kp R          &kp V        &tap_dance_tv_znak  &kp I    &kp GRAVE  &trans
+                                                               &trans            &rus_cntr_layer_eng  &trans       &kp LS(SLASH)  &lt 3 SLASH
+                                                                                 &trans               &trans       &trans
             >;
         };
     };
