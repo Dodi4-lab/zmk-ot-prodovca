@@ -222,6 +222,16 @@
             y-input-code = <1>;
             time-to-max-speed-ms = <150>;
         };
+
+        hold_tab_kp_tog: hold_tab_kp_tog {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAB_KP_TOG";
+            bindings = <&kp>, <&tog>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     combos {
@@ -404,12 +414,12 @@
 
         Eng {
             bindings = <
-&kp ESC                               &kp SLASH  &kp ASTRK  &kp SEMICOLON          &kp LS(SEMICOLON)  &kp EQUAL       &kp LEFT_WIN         &none      &mc_eng        &mc_rus           &Hold_tab QUESTION EXCL  &kp LC(Z)
-&Hold_tab DOUBLE_QUOTES SINGLE_QUOTE  &kp Q      &kp W      &kp F                  &kp P              &kp G           &kp J                &kp L      &kp U          &kp Y             &kp P                    &kp BSLH
-&kp PLUS                              &kp A      &lt 2 R    &lt 5 S                &lt 4 T            &lt 8 D         &kp H                &lt 4 N    &lt 5 E        &lt 7 I           &kp O                    &none
-&kp MINUS                             &kp Z      &lt 7 X    &kp C                  &kp V              &lt 6 B         &kp K                &kp M      &kp LESS_THAN  &kp GREATER_THAN  &kp LS(BACKSLASH)        &kp UNDER
-                                                            &Hold_tab LSHFT ENTER  &kp LEFT_CONTROL   &kp LEFT_ALT    &lt 4 COMMA          &lt 3 DOT
-                                                                                   &kp BACKSPACE      &kp DELETE      &Hold_tab TAB SPACE
+&kp ESC                               &kp SLASH  &kp ASTRK  &kp SEMICOLON          &kp LS(SEMICOLON)  &kp EQUAL                      &kp LEFT_WIN         &none      &mc_eng        &mc_rus           &Hold_tab QUESTION EXCL  &kp LC(Z)
+&Hold_tab DOUBLE_QUOTES SINGLE_QUOTE  &kp Q      &kp W      &kp F                  &kp P              &kp G                          &kp J                &kp L      &kp U          &kp Y             &kp P                    &kp BSLH
+&kp PLUS                              &kp A      &lt 2 R    &lt 5 S                &lt 4 T            &lt 8 D                        &kp H                &lt 4 N    &lt 5 E        &lt 7 I           &kp O                    &none
+&kp MINUS                             &kp Z      &lt 7 X    &kp C                  &kp V              &lt 6 B                        &kp K                &kp M      &kp LESS_THAN  &kp GREATER_THAN  &kp LS(BACKSLASH)        &kp UNDER
+                                                            &Hold_tab LSHFT ENTER  &kp LEFT_CONTROL   &hold_tab_kp_tog LEFT_ALT 5    &lt 4 COMMA          &lt 3 DOT
+                                                                                   &kp BACKSPACE      &kp DELETE                     &Hold_tab TAB SPACE
             >;
         };
 
