@@ -458,11 +458,11 @@
 
         digits {
             bindings = <
-&tog 4      &kp TILDE  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)    &trans     &trans  &kp NUMBER_0  &trans  &trans    &trans
-&kp INSERT  &trans     &trans            &trans            &trans            &trans        &kp PLUS   &kp N7  &kp N8        &kp N9  &kp STAR  &kp CARET
-&kp LS(N7)  &trans     &trans            &trans            &trans            &trans        &kp MINUS  &kp N4  &kp N5        &kp N6  &kp FSLH  &kp EQUAL
-&trans      &kp GRAVE  &kp BACKSLASH     &trans            &trans            &trans        &kp N0     &kp N1  &kp N2        &kp N3  &kp DOT   &kp ENTER
-                                         &kp LS(ENTER)     &trans            &trans        &trans     &trans
+&tog 4      &kp TILDE  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)    &trans     &trans        &kp NUMBER_0  &trans  &trans      &trans
+&kp INSERT  &trans     &trans            &trans            &trans            &trans        &kp PLUS   &kp N7        &kp N8        &kp N9  &kp STAR    &kp CARET
+&kp LS(N7)  &trans     &trans            &trans            &trans            &trans        &kp MINUS  &kp N4        &kp N5        &kp N6  &kp FSLH    &kp EQUAL
+&trans      &kp GRAVE  &kp BACKSLASH     &trans            &trans            &trans        &kp N0     &kp N1        &kp N2        &kp N3  &kp KP_DOT  &kp ENTER
+                                         &kp LS(ENTER)     &trans            &trans        &trans     &kp NUMBER_0
                                                            &trans            &trans        &trans
             >;
         };
