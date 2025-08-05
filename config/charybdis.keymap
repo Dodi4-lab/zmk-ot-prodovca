@@ -528,9 +528,9 @@
         Rulemak {
             bindings = <
 &kp ESC                          &kp FSLH  &kp STAR            &kp LS(NUMBER_4)  &kp LS(NUMBER_6)     &kp EQUAL    &trans         &trans       &trans              &trans   &trans     &trans
-&bh_rus_kavychka 0 LS(NUMBER_2)  &kp Z     &kp SEMI            &kp A             &kp G                &kp U        &kp Q          &kp K        &kp E               &kp S    &kp DOT    &kp O
+&bh_rus_kavychka 0 LS(NUMBER_2)  &kp Z     &kp SEMI            &kp A             &kp G                &kp U        &kp Q          &kp K        &kp E               &kp S    &kp DOT    &kp I
 &kp PLUS                         &kp F     &lt 2 H             &lt 5 C           &lt 4 N              &lt 8 L      &kp X          &lt 4 Y      &lt 5 T             &lt 7 B  &kp J      &kp APOS
-&kp MINUS                        &kp P     &lt 7 LEFT_BRACKET  &kp W             &kp D                &kp COMMA    &kp R          &kp V        &tap_dance_tv_znak  &kp I    &kp GRAVE  &trans
+&kp MINUS                        &kp P     &lt 7 LEFT_BRACKET  &kp W             &kp D                &kp COMMA    &kp R          &kp V        &tap_dance_tv_znak  &kp O    &kp GRAVE  &trans
                                                                &trans            &rus_cntr_layer_eng  &trans       &kp LS(SLASH)  &lt 3 SLASH
                                                                                  &trans               &trans       &trans
             >;
