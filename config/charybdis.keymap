@@ -81,13 +81,6 @@
             label = "MC_LESS_GREAT";
         };
 
-        mc_quick: mc_quick {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp T &kp O &kp B &kp O &kp L &kp I &kp N>;
-            label = "MC_QUICK";
-        };
-
         rus_cntr_layer_eng: rus_cntr_layer_eng {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
