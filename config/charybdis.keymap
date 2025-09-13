@@ -19,11 +19,6 @@
             bindings = <&mo 1>;
             key-positions = <48 53>;
         };
-
-        cb_backspace_delete {
-            bindings = <&kp DELETE>;
-            key-positions = <11 48>;
-        };
     };
 
     macros {
@@ -61,7 +56,7 @@
 &kp ESCAPE  &kp F1  &kp F2          &kp F3          &kp F4           &kp F4    &kp F5             &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
 &trans      &trans  &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &trans    &trans             &trans  &trans  &trans  &trans  &trans
 &trans      &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &trans             &trans  &trans  &trans  &trans  &trans
-&trans      &trans  &trans          &trans          &trans           &trans    &trans             &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &trans          &trans          &trans           &trans    &trans             &trans  &trans  &trans  &trans  &kp DELETE
                                     &trans          &trans           &trans    &copyright_symbol  &trans
                                                     &trans           &trans    &trans
             >;
