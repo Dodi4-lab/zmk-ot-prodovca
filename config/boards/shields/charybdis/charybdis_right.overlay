@@ -55,7 +55,7 @@
     };
 };
 
-&spi1 {
+&spi0 {
     status = "okay";
     cs-gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
 
@@ -66,8 +66,8 @@
         spi-max-frequency = <2000000>;
         motion-gpios = <&gpio0 10 GPIO_ACTIVE_LOW>;
 		
-		zephyr,axis-x = <REL_X>;
-		zephyr,axis-y = <REL_Y>;
+		zephyr,axis-x = <INPUT_REL_X>;
+		zephyr,axis-y = <INPUT_REL_Y>;
 
         // При необходимости настрой ориентацию здесь:
         // orientation = <0>;  // попробуй 0, 90, 180, 270
