@@ -54,24 +54,24 @@
     };
 };
 
-&spi1 {   // или &spi0 — проверь по своей плате, но на nice_nano v2 трекбол обычно на spi1
+&spi1 {
     status = "okay";
-    cs-gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;   // твой CS-пин, подставь свой если другой
+    cs-gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
 
     trackball: pmw3610@0 {
         compatible = "pixart,pmw3610";
         reg = <0>;
         label = "TRACKBALL";
         spi-max-frequency = <2000000>;
-        int-gpios = <&gpio0 10 GPIO_ACTIVE_LOW>;
         motion-gpios = <&gpio0 10 GPIO_ACTIVE_LOW>;
 
-        zephyr,axis-x = <INPUT_REL_X>;
-        zephyr,axis-y = <INPUT_REL_Y>;
+        zephyr,axis-x = <REL_X>;
+        zephyr,axis-y = <REL_Y>;
 
-        // Если курсор после прошивки едет вверх-вниз наоборот — раскомментируй:
-        // invert-y;
+        // При необходимости настрой ориентацию здесь:
+        // orientation = <0>;  // попробуй 0, 90, 180, 270
         // invert-x;
+        // invert-y;
     };
 };
 
