@@ -5,6 +5,7 @@
  */
  
 #include "charybdis.dtsi"
+#include <dt-bindings/input/input-event-codes.h>
 
 #define INPUT_EV_KEY 0x01               /**< Key event */
 #define INPUT_EV_REL 0x02               /**< Relative coordinate event */
@@ -64,9 +65,9 @@
         label = "TRACKBALL";
         spi-max-frequency = <2000000>;
         motion-gpios = <&gpio0 10 GPIO_ACTIVE_LOW>;
-
-        zephyr,axis-x = <REL_X>;
-        zephyr,axis-y = <REL_Y>;
+		
+		zephyr,axis-x = <REL_X>;
+		zephyr,axis-y = <REL_Y>;
 
         // При необходимости настрой ориентацию здесь:
         // orientation = <0>;  // попробуй 0, 90, 180, 270
