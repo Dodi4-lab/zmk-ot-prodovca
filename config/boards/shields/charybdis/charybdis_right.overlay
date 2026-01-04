@@ -63,13 +63,14 @@
 
     cs-gpios = <&gpio0 16 GPIO_ACTIVE_LOW>;  // CS (chip select)
 
-    pmw3360: pmw3360@0 {
-        compatible = "pixart,pmw3360";
-        reg = <0>;
-        irq-gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;  // Motion interrupt
-        spi-max-frequency = <2000000>;
-        status = "okay";
-    };
+	trackball: pmw3360@0 {
+	        compatible = "pixart,pmw3360";
+	        label = "trackball";  // дополнительно, на всякий случай
+	        reg = <0>;
+	        irq-gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
+	        spi-max-frequency = <2000000>;
+	        status = "okay";
+	    };
 };
 
 
