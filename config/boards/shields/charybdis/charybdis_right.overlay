@@ -54,45 +54,41 @@
         };
     };
 };
-
 &spi0 {
     status = "okay";
     pinctrl-0 = <&spi0_default>;
     pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
 
-    cs-gpios = <&gpio0 20 GPIO_ACTIVE_LOW>;  // Из твоего оригинального рабочего кода
+    cs-gpios = <&gpio0 20 GPIO_ACTIVE_LOW>;  // Из оригинала
 
     trackball: pmw3610@0 {
-        compatible = "pixart,pmw3610";
+        compatible = "pixart,pmw3610-alt";  // ← Обязательно -alt!
         label = "trackball";
         reg = <0>;
-        motion-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;  // Из оригинала, с pull-up
+        irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;  // Из оригинала
         spi-max-frequency = <2000000>;
 
-        // Обязательные оси
-        zephyr,axis-x = <-INPUT_REL_X>;   // Инверсия X (как у тебя было PMW3610_INVERT_X=y)
-        zephyr,axis-y = <INPUT_REL_Y>;
+        // Обязательные для осей
+        evt-type = <INPUT_EV_REL>;
+        x-input-code = <INPUT_REL_X>;
+        y-input-code = <INPUT_REL_Y>;
 
-        // Настройки из твоего старого .conf (теперь в DTS)
+        // Твои настройки
         cpi = <1300>;
-        cpi-divisor = <1>;
 
-        orientation-90;                   // Поворот на 90° (без = и <>)
+        invert-x;  // Инверсия X (как PMW3610_INVERT_X=y)
 
-        snipe-cpi = <200>;
-        snipe-cpi-divisor = <1>;
+        // Для поворота на 90° (если нужно, как PMW3610_ORIENTATION_90=y):
+        // swap-xy;
+        // invert-y;  // или invert-x — подбери экспериментом после заливки
 
-        scroll-tick = <16>;
+        // Опционально: лучшая отзывчивость (меньше лагов)
+        force-awake;
+        force-awake-4ms-mode;  // 250Hz reporting
 
-        polling-rate-125-sw;
-
-        smart-algorithm;
-
-        automouse-timeout-ms = <400>;
-
-        // Опционально: задержка на старте (если курсор не сразу работает или "Incorrect product id")
-        init-power-up-extra-delay-ms = <1000>;
+        // Если "Incorrect product id" в логе — добавь задержку
+        // init-power-up-extra-delay-ms = <1000>;
 
         status = "okay";
     };
