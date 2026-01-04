@@ -63,8 +63,8 @@
 
     cs-gpios = <&gpio0 16 GPIO_ACTIVE_LOW>;  // CS (chip select)
 
-	trackball: pmw3360@0 {
-	        compatible = "pixart,pmw3360";
+	trackball: pmw3610@0 {
+	        compatible = "pixart,pmw3610";
 	        label = "trackball";  // дополнительно, на всякий случай
 	        reg = <0>;
 	        irq-gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
