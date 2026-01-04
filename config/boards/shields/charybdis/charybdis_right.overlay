@@ -63,12 +63,14 @@
 
     cs-gpios = <&gpio0 16 GPIO_ACTIVE_LOW>;
 
-    trackball: pmw3610@0 {
+	trackball: pmw3610@0 {
         compatible = "pixart,pmw3610";
         label = "trackball";
         reg = <0>;
-        motion-gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;  // ← Вот это главное изменение
+        motion-gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
         spi-max-frequency = <2000000>;
+        zephyr,axis-x = <INPUT_REL_X>;     // ← Добавь эту строку
+        zephyr,axis-y = <INPUT_REL_Y>;     // ← И эту строку
         status = "okay";
     };
 };
