@@ -63,15 +63,34 @@
 
     cs-gpios = <&gpio0 20 GPIO_ACTIVE_LOW>;  // ← Из оригинала: P0.20
 
-    trackball: pmw3610@0 {
+	trackball: pmw3610@0 {
         compatible = "pixart,pmw3610";
         label = "trackball";
         reg = <0>;
-        motion-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;  // ← Из оригинала: P0.06 с pull-up
+        motion-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;  // Из оригинала
         spi-max-frequency = <2000000>;
 
-        zephyr,axis-x = <INPUT_REL_X>;
-        zephyr,axis-y = <INPUT_REL_Y>;
+        zephyr,axis-x = <-INPUT_REL_X>;   // Инверсия X (было PMW3610_INVERT_X=y → минус)
+        zephyr,axis-y = <INPUT_REL_Y>;    // Без инверсии Y
+
+        cpi = <1300>;                     // PMW3610_CPI=1300
+        cpi-divisor = <1>;                // PMW3610_CPI_DIVIDOR=1
+
+        orientation-90;                   // PMW3610_ORIENTATION_90=y (поворот на 90°)
+
+        snipe-cpi = <200>;                // PMW3610_SNIPE_CPI=200
+        snipe-cpi-divisor = <1>;          // PMW3610_SNIPE_CPI_DIVIDOR=1
+
+        scroll-tick = <16>;               // PMW3610_SCROLL_TICK=16 (для scroll mode)
+
+        polling-rate-125-sw;              // PMW3610_POLLING_RATE_125_SW=y
+
+        smart-algorithm;                  // PMW3610_SMART_ALGORITHM=y
+
+        automouse-timeout-ms = <400>;     // PMW3610_AUTOMOUSE_TIMEOUT_MS=400
+
+        // Опционально: задержка на инициализацию (если трекбол не сразу работает)
+        init-power-up-extra-delay-ms = <1000>;
 
         status = "okay";
     };
