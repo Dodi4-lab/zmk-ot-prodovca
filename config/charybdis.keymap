@@ -40,23 +40,23 @@
 
         Eng {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3        &kp N4          &kp N5          &kp N6           &kp N7               &kp N8     &kp N9      &kp N0              &kp BACKSPACE
-&kp T      &kp Y   &kp U   &kp I         &kp O           &kp P           &kp Y            &kp U                &kp I      &kp O       &kp P               &mt PLUS MINUS
-&kp G      &kp H   &kp J   &kp K         &kp K           &kp L           &kp H            &kp J                &kp K      &kp L       &kp SEMICOLON       &kp SQT
-&kp B      &kp Z   &kp M   &kp COMMA     &kp DOT         &kp SLASH       &kp N            &mt RIGHT_BRACKET M  &kp COMMA  &kp PERIOD  &lt 0 LEFT_BRACKET  &mt BACKSLASH SLASH
-                           &kt LEFT_ALT  &kt LEFT_SHIFT  &kt LCTRL       &kp PRINTSCREEN  &kp ENTER
-                                         &sl 1           &kp LEFT_GUI    &lt 0 SLASH
+&kp GRAVE  &kp N1  &kp N2  &kp N3        &kp N4          &kp N5           &kp N6           &kp N7               &kp N8     &kp N9      &kp N0              &kp BACKSPACE
+&kp T      &kp Y   &kp U   &kp I         &kp O           &kp P            &kp Y            &kp U                &kp I      &kp O       &kp P               &mt PLUS MINUS
+&kp G      &kp H   &kp J   &kp K         &kp L           &kp SEMICOLON    &kp H            &kp J                &kp K      &kp L       &kp SEMICOLON       &kp SQT
+&kp B      &kp Z   &kp M   &kp COMMA     &kp DOT         &kp SLASH        &kp N            &mt RIGHT_BRACKET M  &kp COMMA  &kp PERIOD  &lt 0 LEFT_BRACKET  &mt BACKSLASH SLASH
+                           &kt LEFT_ALT  &kt LEFT_SHIFT  &kt LCTRL        &kp PRINTSCREEN  &kp ENTER
+                                         &sl 1           &kp LEFT_GUI     &lt 0 SLASH
             >;
         };
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp Z   &kp R   &kp Q     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp P   &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp F1  &kp F2  &kp F3  &kp F4    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
+&trans  &trans           &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp A   &kp KP_NUMBER_8  &trans  &kp Z   &kp R   &kp Q     &trans  &trans  &trans  &trans  &trans  &trans
+&kp W   &trans           &trans  &trans  &kp P   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &kp F1  &kp F2  &kp F3  &kp F4    &trans  &trans  &trans  &trans  &trans  &trans
+                                 &trans  &trans  &trans    &trans  &trans
+                                         &trans  &trans    &trans
             >;
         };
     };
