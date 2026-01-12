@@ -46,7 +46,7 @@
 &kp SPACE  &kp H  &kp J          &kp K         &kp P           &kp N8       &kp H            &kp J                &kp K      &kp L       &kp SEMICOLON       &kp LA(LC(S))
 &kp F      &kp Z  &kp M          &kp COMMA     &kp DOT         &kp SLASH    &kp N            &mt RIGHT_BRACKET M  &kp COMMA  &kp PERIOD  &lt 0 LEFT_BRACKET  &kp LC(LA(Q))
                                  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL    &kp PRINTSCREEN  &kp ENTER
-                                               &tog 1          &tog 2       &lt 0 SLASH
+                                               &to 1           &to 2        &lt 0 SLASH
             >;
         };
 
