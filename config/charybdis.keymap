@@ -18,6 +18,11 @@
             bindings = <&mo 0>;
             key-positions = <48 53>;
         };
+
+        switch_mode {
+            bindings = <&tog 3>;
+            key-positions = <55 11>;
+        };
     };
 
     macros {
@@ -69,6 +74,17 @@
 &kp G         &trans        &trans  &trans  &kp PERIOD  &trans          &trans  &trans  &trans  &trans  &trans  &trans
                                     &trans  &trans      &trans          &trans  &trans
                                             &trans      &trans          &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_ALT  &kp Q   &kp W   &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans  &trans  &trans    &trans  &trans
+                                      &trans  &trans    &trans
             >;
         };
     };
