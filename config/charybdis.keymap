@@ -135,12 +135,12 @@
 
         Code_3 {
             bindings = <
-&kp ESCAPE      &kp F1  &kp F2  &kp F3     &kp F4         &kp F5    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL       &kp Q   &kp W   &kp E      &kp R          &kp T     &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_ALT    &kp A   &kp S   &kp D      &kp F          &kp G     &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp Z   &kp X   &kp C      &kp V          &kp B     &trans  &trans  &trans  &trans  &trans  &trans
-                                &kp LCTRL  &kp BACKSPACE  &mo 5     &trans  &trans
-                                           &kp DELETE     &mo 4     &trans
+&kp ESCAPE      &kp F1  &kp F2  &kp F3   &kp F4         &kp F5    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL       &kp Q   &kp W   &kp E    &kp R          &kp T     &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_ALT    &kp A   &kp S   &kp D    &kp F          &kp G     &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp Z   &kp X   &kp C    &kp V          &kp B     &trans  &trans  &trans  &trans  &trans  &trans
+                                &kp TAB  &kp BACKSPACE  &mo 5     &trans  &trans
+                                         &kp DELETE     &mo 4     &trans
             >;
         };
 
@@ -159,7 +159,7 @@
             bindings = <
 &trans  &trans  &trans  &trans     &trans     &trans    &trans  &trans    &kp PAGE_UP    &trans     &trans  &trans
 &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans    &trans  &trans    &kp UP_ARROW   &trans     &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans    &trans  &kp LEFT  &kp DOWN       &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans    &trans  &kp LEFT  &kp DOWN       &kp RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans     &trans     &trans    &trans  &trans    &kp PAGE_DOWN  &trans     &trans  &trans
                         &trans     &trans     &trans    &trans  &trans
                                    &trans     &trans    &trans
