@@ -155,12 +155,12 @@
 
         Code_3 {
             bindings = <
-&kp ESCAPE      &kp F1  &kp F2  &kp F3   &kp F4         &kp F5    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL       &kp Q   &kp W   &kp E    &kp R          &kp T     &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_ALT    &kp A   &kp S   &kp D    &kp F          &kp G     &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp Z   &kp X   &kp C    &kp V          &kp B     &trans  &trans  &trans  &trans  &trans  &trans
-                                &kp TAB  &kp BACKSPACE  &mo 5     &trans  &trans
-                                         &kp DELETE     &mo 4     &trans
+&kp ESCAPE        &kp F1  &kp F2  &kp F3   &kp F4         &kp F5    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_ALT      &kp Q   &kp W   &kp E    &kp R          &kp T     &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT    &kp A   &kp S   &kp D    &kp F          &kp G     &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_CONTROL  &kp Z   &kp X   &kp C    &kp V          &kp B     &trans  &trans  &trans  &trans  &trans  &trans
+                                  &kp TAB  &kp BACKSPACE  &mo 5     &trans  &trans
+                                           &kp DELETE     &mo 4     &trans
             >;
         };
 
