@@ -177,12 +177,12 @@
 
         code_mouse_5 {
             bindings = <
-&trans  &trans  &trans  &trans     &trans     &trans    &trans  &trans    &kp PAGE_UP    &trans     &trans  &trans
-&trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans    &trans  &trans    &kp UP_ARROW   &trans     &trans  &trans
-&trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans    &trans  &kp LEFT  &kp DOWN       &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans    &trans  &trans    &kp PAGE_DOWN  &trans     &trans  &trans
-                        &trans     &trans     &trans    &trans  &trans
-                                   &trans     &trans    &trans
+&trans  &trans  &trans  &trans     &trans     &trans            &trans  &trans    &kp PAGE_UP    &trans     &trans  &trans
+&trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &msc SCRL_UP      &trans  &trans    &kp UP_ARROW   &trans     &trans  &trans
+&trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &msc SCRL_DOWN    &trans  &kp LEFT  &kp DOWN       &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans            &trans  &trans    &kp PAGE_DOWN  &trans     &trans  &trans
+                        &trans     &trans     &trans            &trans  &trans
+                                   &trans     &trans            &trans
             >;
         };
     };
