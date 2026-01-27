@@ -92,7 +92,7 @@
 
         buttom_ {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <38 39>;
+            key-positions = <13 14>;
         };
 
         minusa- {
