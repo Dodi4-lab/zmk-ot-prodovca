@@ -87,7 +87,7 @@
 
         shiftCtrlZ {
             bindings = <&kp LS(LC(Z))>;
-            key-positions = <26 27>;
+            key-positions = <37 38>;
         };
 
         buttom_ {
