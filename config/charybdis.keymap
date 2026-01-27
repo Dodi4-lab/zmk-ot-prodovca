@@ -171,8 +171,8 @@
 &kp A      &kp L  &kp U          &kp I         &kp O             &kp P        &kp Y             &kp U         &kp I      &kp O       &kp P          &kp LEFT_BRACKET
 &kp SPACE  &kp H  &kp J          &kp K         &kp P             &kp N8       &kp H             &kp J         &kp K      &kp L       &kp SEMICOLON  &kp SQT
 &kp F      &kp Z  &kp M          &kp COMMA     &kp DOT           &kp SLASH    &kp N             &kp M         &kp COMMA  &kp PERIOD  &kp SLASH      &kp RIGHT_BRACKET
-                                 &kp LEFT_ALT  &kp LEFT_SHIFT    &mo 2        &kp LEFT_CONTROL  &kp LEFT_ALT
-                                               &kp LEFT_CONTROL  &mo 1        &kp LEFT_SHIFT
+                                 &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 2        &kp LEFT_CONTROL  &kp LEFT_ALT
+                                               &kp LEFT_SHIFT    &mo 1        &kp LEFT_SHIFT
             >;
         };
 
