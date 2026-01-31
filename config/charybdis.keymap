@@ -15,37 +15,37 @@
         compatible = "zmk,combos";
 
         cb_func_layer {
-            bindings = <&mo 0>;
+            bindings = <&mo 3>;
             key-positions = <48 53>;
         };
 
         switch_mode {
-            bindings = <&tog 3>;
+            bindings = <&tog 0>;
             key-positions = <55 11>;
         };
 
         tilda {
             bindings = <&kp GRAVE>;
             key-positions = <1 14>;
-            layers = <3 4>;
+            layers = <0 1>;
         };
 
         skoba1 {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <28 27>;
-            layers = <3 4>;
+            layers = <0 1>;
         };
 
         skoba2 {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <31 32>;
-            layers = <3 4>;
+            layers = <0 1>;
         };
 
         skoba3 {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <16 15>;
-            layers = <3 4>;
+            layers = <0 1>;
         };
 
         skoba_4 {
@@ -56,13 +56,13 @@
         skoba_5 {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <40 39>;
-            layers = <3 4>;
+            layers = <0 1>;
         };
 
         skoba_6 {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <43 44>;
-            layers = <3 4>;
+            layers = <0 1>;
         };
 
         ctrlC {
@@ -144,6 +144,11 @@
             bindings = <&kp ENTER>;
             key-positions = <20 21>;
         };
+
+        f12 {
+            bindings = <&kp F12>;
+            key-positions = <10 11>;
+        };
     };
 
     macros {
@@ -165,14 +170,47 @@
     keymap {
         compatible = "zmk,keymap";
 
+        Code_3 {
+            bindings = <
+&kp ESCAPE        &kp F1  &kp F2  &kp F3        &kp F4          &kp F5    &kp F6          &kp F7        &kp F8     &kp F9   &kp F10        &kp F11
+&kp TAB           &kp Q   &kp W   &kp E         &kp R           &kp T     &kp Y           &kp U         &kp I      &kp O    &kp P          &kp LEFT_BRACKET
+&kp LEFT_ALT      &kp A   &kp S   &kp D         &kp F           &kp G     &kp H           &kp J         &kp K      &kp L    &kp SEMICOLON  &kp APOSTROPHE
+&kp LEFT_CONTROL  &kp Z   &kp X   &kp C         &kp V           &kp B     &kp N           &kp M         &kp COMMA  &kp DOT  &kp SLASH      &kp RIGHT_BRACKET
+                                  &kp LEFT_ALT  &kp LCTRL       &mo 2     &kp LCTRL       &kp LEFT_ALT
+                                                &kp LEFT_SHIFT  &mo 1     &kp LEFT_SHIFT
+            >;
+        };
+
+        Code_4 {
+            bindings = <
+&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH       &kp DOLLAR  &kp PERCENT           &kp CARET       &kp AMPERSAND    &kp ASTERISK     &kp F9           &kp F10          &kp F11
+&trans     &trans           &kp SEMICOLON  &kp BACKSLASH  &kp EQUAL   &trans                &kp KP_NUMLOCK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans           &kp F12
+&trans     &trans           &kp COLON      &kp PLUS       &kp SLASH   &trans                &trans          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0  &trans
+&trans     &trans           &trans         &trans         &trans      &kp LA(LEFT_SHIFT)    &trans          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOT          &trans
+                                           &trans         &trans      &trans                &trans          &trans
+                                                          &trans      &trans                &trans
+            >;
+        };
+
+        code_mouse_5 {
+            bindings = <
+&trans  &trans  &trans  &trans     &trans     &trans            &trans    &trans    &kp PAGE_UP    &trans     &trans   &trans
+&trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &msc SCRL_UP      &trans    &trans    &kp UP_ARROW   &trans     &trans   &trans
+&trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &msc SCRL_DOWN    &kp HOME  &kp LEFT  &kp DOWN       &kp RIGHT  &kp END  &trans
+&trans  &trans  &trans  &trans     &trans     &trans            &trans    &trans    &kp PAGE_DOWN  &trans     &trans   &trans
+                        &trans     &trans     &trans            &trans    &trans
+                                   &trans     &trans            &trans
+            >;
+        };
+
         Game {
             bindings = <
 &mkp MB3   &kp Q  &kp LC(LS(A))  &kp N9        &kp N0            &kp MINUS    &kp F6            &kp F7        &kp F8     &kp F9      &kp F10        &kp F11
 &kp A      &kp L  &kp U          &kp I         &kp O             &kp P        &kp Y             &kp U         &kp I      &kp O       &kp P          &kp LEFT_BRACKET
 &kp SPACE  &kp H  &kp J          &kp K         &kp P             &kp N8       &kp H             &kp J         &kp K      &kp L       &kp SEMICOLON  &kp SQT
 &kp F      &kp Z  &kp M          &kp COMMA     &kp DOT           &kp SLASH    &kp N             &kp M         &kp COMMA  &kp PERIOD  &kp SLASH      &kp RIGHT_BRACKET
-                                 &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 2        &kp LEFT_CONTROL  &kp LEFT_ALT
-                                               &kp LEFT_SHIFT    &mo 1        &kp LEFT_SHIFT
+                                 &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 5        &kp LEFT_CONTROL  &kp LEFT_ALT
+                                               &kp LEFT_SHIFT    &mo 4        &kp LEFT_SHIFT
             >;
         };
 
@@ -195,39 +233,6 @@
 &kp G         &trans        &trans  &trans  &kp PERIOD  &trans          &trans  &trans  &trans  &trans  &trans  &trans
                                     &trans  &trans      &trans          &trans  &trans
                                             &trans      &trans          &trans
-            >;
-        };
-
-        Code_3 {
-            bindings = <
-&kp ESCAPE        &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB           &kp Q   &kp W   &kp E   &kp R   &kp T     &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_ALT      &kp A   &kp S   &kp D   &kp F   &kp G     &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_CONTROL  &kp Z   &kp X   &kp C   &kp V   &kp B     &trans  &trans  &trans  &trans  &trans  &trans
-                                  &trans  &trans  &mo 5     &trans  &trans
-                                          &trans  &mo 4     &trans
-            >;
-        };
-
-        Code_4 {
-            bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH       &kp DOLLAR  &kp PERCENT           &kp CARET       &kp AMPERSAND    &kp ASTERISK     &kp F9           &kp F10          &kp F11
-&trans  &trans           &kp SEMICOLON  &kp BACKSLASH  &kp EQUAL   &trans                &kp KP_NUMLOCK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans           &kp F12
-&trans  &trans           &kp COLON      &kp PLUS       &kp SLASH   &trans                &trans          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0  &trans
-&trans  &trans           &trans         &trans         &trans      &kp LA(LEFT_SHIFT)    &trans          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOT          &trans
-                                        &trans         &trans      &trans                &trans          &trans
-                                                       &trans      &trans                &trans
-            >;
-        };
-
-        code_mouse_5 {
-            bindings = <
-&trans  &trans  &trans  &trans     &trans     &trans            &trans    &trans    &kp PAGE_UP    &trans     &trans   &trans
-&trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &msc SCRL_UP      &trans    &trans    &kp UP_ARROW   &trans     &trans   &trans
-&trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &msc SCRL_DOWN    &kp HOME  &kp LEFT  &kp DOWN       &kp RIGHT  &kp END  &trans
-&trans  &trans  &trans  &trans     &trans     &trans            &trans    &trans    &kp PAGE_DOWN  &trans     &trans   &trans
-                        &trans     &trans     &trans            &trans    &trans
-                                   &trans     &trans            &trans
             >;
         };
     };
