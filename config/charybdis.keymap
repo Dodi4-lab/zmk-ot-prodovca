@@ -149,6 +149,26 @@
             bindings = <&kp F12>;
             key-positions = <10 11>;
         };
+
+        space_right {
+            bindings = <&kp SPACE>;
+            key-positions = <51 55>;
+        };
+
+        enter_right {
+            bindings = <&kp ENTER>;
+            key-positions = <52 51>;
+        };
+
+        delete_left {
+            bindings = <&kp DELETE>;
+            key-positions = <48 49>;
+        };
+
+        backspace_left {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <49 53>;
+        };
     };
 
     macros {
