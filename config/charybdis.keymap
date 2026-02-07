@@ -195,7 +195,7 @@
         code_mouse_5 {
             bindings = <
 &trans  &trans  &trans  &trans     &trans     &trans            &trans    &trans    &kp PAGE_UP    &trans     &trans   &trans
-&trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &msc SCRL_UP      &trans    &trans    &kp UP_ARROW   &trans     &trans   &trans
+&trans  &trans  &trans  &kp SPACE  &kp ENTER  &msc SCRL_UP      &trans    &trans    &kp UP_ARROW   &trans     &trans   &trans
 &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &msc SCRL_DOWN    &kp HOME  &kp LEFT  &kp DOWN       &kp RIGHT  &kp END  &trans
 &trans  &trans  &trans  &kp SPACE  &kp ENTER  &trans            &trans    &trans    &kp PAGE_DOWN  &trans     &trans   &trans
                         &trans     &trans     &trans            &trans    &trans
