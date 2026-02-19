@@ -33,12 +33,21 @@
 
         Code_3 {
             bindings = <
+<<<<<<< Charybdis_4x6
 &kp ESCAPE      &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3      &kp NUMBER_4  &kp N5            &kp NUMBER_6  &kp N7         &kp N8        &kp N9           &kp N0                   &kp NON_US_BACKSLASH
 &kp TAB         &kp Q           &kp W           &kp E             &kp R         &kp T             &kp Y         &kp U          &kp I         &kp O            &kp P                    &kp LEFT_BRACKET
 &kp DELETE      &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F   &kp G             &kp H         &mt RCTRL J    &mt RSHIFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON  &kp APOSTROPHE
 &kp LEFT_SHIFT  &kp Z           &kp X           &kp C             &kp V         &kp B             &kp N         &kp M          &kp COMMA     &kp DOT          &kp SLASH                &kp RIGHT_BRACKET
                                                 &kp TAB           &kp SPACE     &lt 2 LEFT_GUI    &lt 1 ENTER   &kp BACKSPACE
                                                                   &mkp RCLK     &mkp LCLK         &mo 2
+=======
+&kp GRAVE         &kp N1  &kp N2  &kp N3        &kp N4      &mt F5 N5       &kp N6           &kp N7               &kp N8     &kp N9      &kp N0              &kp BACKSPACE
+&kp TAB           &kp Q   &kp W   &kp E         &kp R       &kp T           &kp Y            &kp U                &kp I      &kp O       &kp P               &mt PLUS MINUS
+&kp LEFT_SHIFT    &kp A   &kp S   &kp D         &kp F       &kp G           &kp H            &kp J                &kp K      &kp L       &kp SEMICOLON       &kp SQT
+&kp LEFT_CONTROL  &kp Z   &kp X   &kp C         &kp V       &kp B           &kp N            &mt RIGHT_BRACKET M  &kp COMMA  &kp PERIOD  &lt 5 LEFT_BRACKET  &mt BACKSLASH SLASH
+                                  &kp LEFT_ALT  &kp SPACE   &mo 1           &kp PRINTSCREEN  &kp ENTER
+                                                &kp ESCAPE  &kp LEFT_GUI    &lt 3 SLASH
+>>>>>>> Charybdis_4x6
             >;
         };
 
