@@ -231,10 +231,10 @@
 
         Code_4 {
             bindings = <
-&kp GRAVE   &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT           &kp CARET  &kp AMPERSAND    &kp ASTERISK     &kp F9           &kp F10          &kp F11
-&kp ESCAPE  &kp F1           &kp F2       &kp F3    &kp F4      &kp F5                &kp F6     &kp F7           &kp F8           &kp F9           &kp F10          &kp F11
-&trans      &trans           &kp COLON    &kp PLUS  &kp SLASH   &trans                &trans     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0  &kp F12
-&trans      &trans           &trans       &trans    &trans      &kp LA(LEFT_SHIFT)    &trans     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOT          &trans
+&kp GRAVE   &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT           &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp F9        &kp F10  &kp F11
+&kp ESCAPE  &kp F1           &kp F2       &kp F3    &kp F4      &kp F5                &kp F6     &kp N7         &kp N8        &kp N9        &kp F10  &kp F11
+&trans      &kp EQUAL        &kp COLON    &kp PLUS  &kp SLASH   &trans                &trans     &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp N0   &kp F12
+&trans      &trans           &trans       &trans    &trans      &kp LA(LEFT_SHIFT)    &trans     &kp N1         &kp NUMBER_2  &kp NUMBER_3  &kp DOT  &trans
                                           &trans    &trans      &trans                &trans     &trans
                                                     &trans      &trans                &trans
             >;
@@ -242,12 +242,12 @@
 
         code_mouse_5 {
             bindings = <
-&trans  &trans  &trans  &trans         &trans      &trans            &trans    &trans    &kp PAGE_UP    &trans     &trans   &trans
-&kp F1  &kp F2  &kp F3  &kp F4         &kp F5      &kp F6            &kp F7    &kp F8    &kp UP_ARROW   &kp F10    &kp F11  &kp F12
-&trans  &trans  &trans  &mkp LCLK      &mkp RCLK   &msc SCRL_UP      &kp HOME  &kp LEFT  &kp DOWN       &kp RIGHT  &kp END  &trans
-&trans  &trans  &trans  &kp BACKSPACE  &kp DELETE  &msc SCRL_DOWN    &trans    &trans    &kp PAGE_DOWN  &trans     &trans   &trans
-                        &trans         &trans      &trans            &trans    &trans
-                                       &trans      &trans            &trans
+&trans  &trans  &trans      &kp PAGE_UP    &trans         &trans            &trans          &trans           &kp PAGE_UP      &trans           &trans           &trans
+&trans  &trans  &kp DELETE  &kp UP_ARROW   &kp BACKSPACE  &trans            &trans          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans           &trans
+&trans  &trans  &kp LEFT    &kp DOWN       &kp RIGHT      &msc SCRL_UP      &kp KP_NUMLOCK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0  &trans
+&trans  &trans  &kp HOME    &kp PAGE_DOWN  &kp END        &msc SCRL_DOWN    &trans          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans           &trans
+                            &trans         &trans         &trans            &trans          &trans
+                                           &trans         &trans            &trans
             >;
         };
 
