@@ -242,12 +242,12 @@
 
         code_mouse_5 {
             bindings = <
-&trans  &trans  &trans              &kp PAGE_UP               &trans                 &trans            &trans          &trans                        &kp PAGE_UP                 &trans                      &trans                  &trans
-&trans  &trans  &kp DELETE          &kp UP_ARROW              &kp BACKSPACE          &trans            &trans          &kp KP_NUMBER_7               &kp KP_NUMBER_8             &kp KP_NUMBER_9             &trans                  &trans
-&trans  &trans  &hml LEFT_ALT LEFT  &hml LEFT_GUI DOWN_ARROW  &hml LEFT_SHIFT RIGHT  &msc SCRL_UP      &kp KP_NUMLOCK  &hmr RIGHT_SHIFT KP_NUMBER_4  &hmr RIGHT_GUI KP_NUMBER_5  &hmr RIGHT_ALT KP_NUMBER_6  &hmr RCTRL KP_NUMBER_0  &trans
-&trans  &trans  &kp HOME            &kp PAGE_DOWN             &kp END                &msc SCRL_DOWN    &trans          &kp KP_NUMBER_1               &kp KP_NUMBER_2             &kp KP_NUMBER_3             &trans                  &trans
-                                    &trans                    &trans                 &trans            &trans          &trans
-                                                              &trans                 &trans            &trans
+&trans  &trans  &trans      &kp PAGE_UP    &trans         &trans            &trans          &trans                        &kp PAGE_UP                 &trans                      &trans                  &trans
+&trans  &trans  &kp DELETE  &kp UP_ARROW   &kp BACKSPACE  &trans            &trans          &kp KP_NUMBER_7               &kp KP_NUMBER_8             &kp KP_NUMBER_9             &trans                  &trans
+&trans  &trans  &kp LEFT    &kp DOWN       &kp RIGHT      &msc SCRL_UP      &kp KP_NUMLOCK  &hmr RIGHT_SHIFT KP_NUMBER_4  &hmr RIGHT_GUI KP_NUMBER_5  &hmr RIGHT_ALT KP_NUMBER_6  &hmr RCTRL KP_NUMBER_0  &trans
+&trans  &trans  &kp HOME    &kp PAGE_DOWN  &kp END        &msc SCRL_DOWN    &trans          &kp KP_NUMBER_1               &kp KP_NUMBER_2             &kp KP_NUMBER_3             &trans                  &trans
+                            &trans         &trans         &trans            &trans          &trans
+                                           &trans         &trans            &trans
             >;
         };
 
