@@ -231,23 +231,23 @@
 
         Code_4 {
             bindings = <
-&kp GRAVE   &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT           &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp MINUS     &kp EQUAL  &kp NON_US_BACKSLASH
-&kp ESCAPE  &kp F1           &kp F2       &kp F3    &kp F4      &kp F5                &kp F6     &kp F7         &kp F8        &kp F9        &kp F10    &kp F11
-&trans      &kp EQUAL        &kp COLON    &kp PLUS  &kp SLASH   &trans                &trans     &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp N0     &kp F12
-&trans      &trans           &trans       &trans    &trans      &kp LA(LEFT_SHIFT)    &trans     &kp N1         &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &trans
-                                          &trans    &trans      &trans                &trans     &trans
-                                                    &trans      &trans                &trans
+&kp GRAVE   &kp EXCLAMATION   &kp AT_SIGN          &kp HASH            &kp DOLLAR             &kp PERCENT           &kp CARET  &kp AMPERSAND              &kp ASTERISK       &kp MINUS                &kp EQUAL      &kp NON_US_BACKSLASH
+&kp ESCAPE  &kp F1            &kp F2               &kp F3              &kp F4                 &kp F5                &kp F6     &kp F7                     &kp F8             &kp F9                   &kp F10        &kp F11
+&trans      &hml LCTRL EQUAL  &hml LEFT_ALT COLON  &hml LEFT_GUI PLUS  &hml LEFT_SHIFT SLASH  &trans                &trans     &hmr RIGHT_SHIFT NUMBER_4  &hmr N5 RIGHT_GUI  &hmr RIGHT_ALT NUMBER_6  &hmr RCTRL N0  &kp F12
+&trans      &trans            &trans               &trans              &trans                 &kp LA(LEFT_SHIFT)    &trans     &kp N1                     &kp NUMBER_2       &kp NUMBER_3             &kp DOT        &trans
+                                                   &trans              &trans                 &trans                &trans     &trans
+                                                                       &trans                 &trans                &trans
             >;
         };
 
         code_mouse_5 {
             bindings = <
-&trans  &trans  &trans      &kp PAGE_UP    &trans         &trans            &trans          &trans           &kp PAGE_UP      &trans           &trans           &trans
-&trans  &trans  &kp DELETE  &kp UP_ARROW   &kp BACKSPACE  &trans            &trans          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans           &trans
-&trans  &trans  &kp LEFT    &kp DOWN       &kp RIGHT      &msc SCRL_UP      &kp KP_NUMLOCK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0  &trans
-&trans  &trans  &kp HOME    &kp PAGE_DOWN  &kp END        &msc SCRL_DOWN    &trans          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans           &trans
-                            &trans         &trans         &trans            &trans          &trans
-                                           &trans         &trans            &trans
+&trans  &trans  &trans              &kp PAGE_UP               &trans                 &trans            &trans          &trans                        &kp PAGE_UP                 &trans                      &trans                  &trans
+&trans  &trans  &kp DELETE          &kp UP_ARROW              &kp BACKSPACE          &trans            &trans          &kp KP_NUMBER_7               &kp KP_NUMBER_8             &kp KP_NUMBER_9             &trans                  &trans
+&trans  &trans  &hml LEFT_ALT LEFT  &hml LEFT_GUI DOWN_ARROW  &hml LEFT_SHIFT RIGHT  &msc SCRL_UP      &kp KP_NUMLOCK  &hmr RIGHT_SHIFT KP_NUMBER_4  &hmr RIGHT_GUI KP_NUMBER_5  &hmr RIGHT_ALT KP_NUMBER_6  &hmr RCTRL KP_NUMBER_0  &trans
+&trans  &trans  &kp HOME            &kp PAGE_DOWN             &kp END                &msc SCRL_DOWN    &trans          &kp KP_NUMBER_1               &kp KP_NUMBER_2             &kp KP_NUMBER_3             &trans                  &trans
+                                    &trans                    &trans                 &trans            &trans          &trans
+                                                              &trans                 &trans            &trans
             >;
         };
 
