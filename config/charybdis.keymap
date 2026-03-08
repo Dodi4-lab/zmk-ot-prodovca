@@ -231,12 +231,12 @@
 
         Code_4 {
             bindings = <
-&kp GRAVE   &kp EXCLAMATION   &kp AT_SIGN          &kp HASH            &kp DOLLAR             &kp PERCENT           &kp CARET  &kp AMPERSAND              &kp ASTERISK       &kp MINUS                &kp EQUAL      &kp NON_US_BACKSLASH
-&kp ESCAPE  &kp F1            &kp F2               &kp F3              &kp F4                 &kp F5                &kp F6     &kp F7                     &kp F8             &kp F9                   &kp F10        &kp F11
-&trans      &hml LCTRL EQUAL  &hml LEFT_ALT COLON  &hml LEFT_GUI PLUS  &hml LEFT_SHIFT SLASH  &trans                &trans     &hmr RIGHT_SHIFT NUMBER_4  &hmr N5 RIGHT_GUI  &hmr RIGHT_ALT NUMBER_6  &hmr RCTRL N0  &kp F12
-&trans      &trans            &trans               &trans              &trans                 &kp LA(LEFT_SHIFT)    &trans     &kp N1                     &kp NUMBER_2       &kp NUMBER_3             &kp DOT        &trans
-                                                   &trans              &trans                 &trans                &trans     &trans
-                                                                       &trans                 &trans                &trans
+&kp GRAVE   &kp EXCLAMATION   &kp AT_SIGN          &kp HASH            &kp DOLLAR             &kp PERCENT      &kp CARET    &kp AMPERSAND               &kp ASTERISK             &kp MINUS                &kp EQUAL      &kp NON_US_BACKSLASH
+&kp ESCAPE  &kp F1            &kp F2               &kp F3              &kp F4                 &kp F5           &kp F6       &kp F7                      &kp F8                   &kp F9                   &kp F10        &kp F11
+&trans      &hml LCTRL EQUAL  &hml LEFT_ALT COLON  &hml LEFT_GUI PLUS  &hml LEFT_SHIFT SLASH  &kp HASH         &kp DOLLAR   &hmr RIGHT_SHIFT BACKSLASH  &hmr RIGHT_GUI QUESTION  &hmr RIGHT_ALT NUMBER_6  &hmr RCTRL N0  &kp F12
+&trans      &trans            &kp ASTERISK         &kp MINUS           &kp ASTERISK           &kp AMPERSAND    &kp AT_SIGN  &kp DOUBLE_QUOTES           &kp EXCLAMATION          &kp NUMBER_3             &kp DOT        &trans
+                                                   &trans              &trans                 &trans           &trans       &trans
+                                                                       &trans                 &trans           &trans
             >;
         };
 
