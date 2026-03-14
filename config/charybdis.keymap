@@ -185,6 +185,20 @@
 
             label = "COPYRIGHT_SYMBOL";
         };
+
+        dollar: dollar {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp NUMBER_3 &kp NUMBER_6>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "DOLLAR";
+        };
     };
 
     behaviors {
@@ -233,7 +247,7 @@
             bindings = <
 &kp GRAVE   &kp EXCLAMATION   &kp AT_SIGN          &kp HASH            &kp DOLLAR             &kp PERCENT      &kp CARET    &kp AMPERSAND               &kp ASTERISK             &kp MINUS                &kp EQUAL      &kp NON_US_BACKSLASH
 &kp ESCAPE  &kp F1            &kp F2               &kp F3              &kp F4                 &kp F5           &kp F6       &kp F7                      &kp F8                   &kp F9                   &kp F10        &kp F11
-&trans      &hml LCTRL EQUAL  &hml LEFT_ALT COLON  &hml LEFT_GUI PLUS  &hml LEFT_SHIFT SLASH  &kp HASH         &kp DOLLAR   &hmr RIGHT_SHIFT BACKSLASH  &hmr RIGHT_GUI QUESTION  &hmr RIGHT_ALT NUMBER_6  &hmr RCTRL N0  &kp F12
+&trans      &hml LCTRL EQUAL  &hml LEFT_ALT COLON  &hml LEFT_GUI PLUS  &hml LEFT_SHIFT SLASH  &kp HASH         &dollar      &hmr RIGHT_SHIFT BACKSLASH  &hmr RIGHT_GUI QUESTION  &hmr RIGHT_ALT NUMBER_6  &hmr RCTRL N0  &kp F12
 &trans      &trans            &kp ASTERISK         &kp MINUS           &kp ASTERISK           &kp AMPERSAND    &kp AT_SIGN  &kp DOUBLE_QUOTES           &kp EXCLAMATION          &kp NUMBER_3             &kp DOT        &trans
                                                    &trans              &trans                 &trans           &trans       &trans
                                                                        &trans                 &trans           &trans
