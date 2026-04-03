@@ -15,7 +15,7 @@
         compatible = "zmk,combos";
 
         cb_func_layer {
-            bindings = <&mo 3>;
+            bindings = <&mo 4>;
             key-positions = <48 53>;
         };
 
@@ -27,25 +27,25 @@
         tilda {
             bindings = <&kp GRAVE>;
             key-positions = <1 14>;
-            layers = <0 1>;
+            layers = <0 2>;
         };
 
         skoba1 {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <28 27>;
-            layers = <0 1>;
+            layers = <0 2>;
         };
 
         skoba2 {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <31 32>;
-            layers = <0 1>;
+            layers = <0 2>;
         };
 
         skoba3 {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <16 15>;
-            layers = <0 1>;
+            layers = <0 2>;
         };
 
         skoba_4 {
@@ -56,13 +56,13 @@
         skoba_5 {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <40 39>;
-            layers = <0 1>;
+            layers = <0 2>;
         };
 
         skoba_6 {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <43 44>;
-            layers = <0 1>;
+            layers = <0 2>;
         };
 
         ctrlC {
@@ -234,12 +234,23 @@
 
         Code_3 {
             bindings = <
+&kp ESCAPE      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp NUMBER_6  &kp N7         &kp N8     &kp N9   &kp N0         &kp NON_US_BACKSLASH
+&kp TAB         &kp Q         &kp W         &kp E         &kp R         &kp T        &kp Y         &kp U          &kp I      &kp O    &kp P          &kp LEFT_BRACKET
+&kp DELETE      &kp A         &kp S         &kp D         &kp F         &kp G        &kp H         &kp J          &kp K      &kp L    &kp SEMICOLON  &kp APOSTROPHE
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V         &kp B        &kp N         &kp M          &kp COMMA  &kp DOT  &kp SLASH      &kp RIGHT_BRACKET
+                                            &kp TAB       &kp SPACE     &mo 1        &lt 2 ENTER   &kp BACKSPACE
+                                                          &mkp RCLK     &mkp LCLK    &mo 3
+            >;
+        };
+
+        layer_6 {
+            bindings = <
 &kp ESCAPE      &kp NUMBER_1         &kp NUMBER_2     &kp NUMBER_3     &kp NUMBER_4       &kp N5                &kp NUMBER_6  &kp N7              &kp N8            &kp N9            &kp N0                &kp NON_US_BACKSLASH
 &kp TAB         &kp Q                &kp W            &kp E            &kp R              &kp T                 &kp Y         &kp U               &kp I             &kp O             &kp P                 &kp LEFT_BRACKET
 &kp DELETE      &hml LEFT_CONTROL A  &hml LEFT_ALT S  &hml LEFT_GUI D  &hml LEFT_SHIFT F  &kp G                 &kp H         &hmr RIGHT_SHIFT J  &hmr RIGHT_GUI K  &hmr RIGHT_ALT L  &hmr RCTRL SEMICOLON  &kp APOSTROPHE
 &kp LEFT_SHIFT  &kp Z                &kp X            &kp C            &kp V              &kp B                 &kp N         &kp M               &kp COMMA         &kp DOT           &kp SLASH             &kp RIGHT_BRACKET
-                                                      &kp TAB          &kp SPACE          &lt 2 LG(CAPSLOCK)    &lt 1 ENTER   &kp BACKSPACE
-                                                                       &mkp RCLK          &mkp LCLK             &mo 2
+                                                      &kp TAB          &kp SPACE          &lt 3 LG(CAPSLOCK)    &lt 2 ENTER   &kp BACKSPACE
+                                                                       &mkp RCLK          &mkp LCLK             &mo 3
             >;
         };
 
@@ -271,8 +282,8 @@
 &kp A      &kp L  &kp U          &kp I         &kp O             &kp P        &kp Y             &kp U         &kp I      &kp O       &kp P          &kp LEFT_BRACKET
 &kp SPACE  &kp H  &kp J          &kp K         &kp P             &kp N8       &kp H             &kp J         &kp K      &kp L       &kp SEMICOLON  &kp SQT
 &kp F      &kp Z  &kp M          &kp COMMA     &kp DOT           &kp SLASH    &kp N             &kp M         &kp COMMA  &kp PERIOD  &kp SLASH      &kp RIGHT_BRACKET
-                                 &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 5        &kp LEFT_CONTROL  &kp LEFT_ALT
-                                               &kp LEFT_SHIFT    &mo 4        &kp LEFT_SHIFT
+                                 &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 6        &kp LEFT_CONTROL  &kp LEFT_ALT
+                                               &kp LEFT_SHIFT    &mo 5        &kp LEFT_SHIFT
             >;
         };
 
