@@ -100,16 +100,6 @@
             key-positions = <14 15>;
         };
 
-        lcm {
-            bindings = <&mkp LCLK>;
-            key-positions = <50 27>;
-        };
-
-        rcm {
-            bindings = <&mkp RCLK>;
-            key-positions = <50 28>;
-        };
-
         lesserThan {
             bindings = <&kp LESS_THAN>;
             key-positions = <3 4>;
