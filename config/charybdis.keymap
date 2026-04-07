@@ -141,42 +141,42 @@
         };
 
         l_ctrl {
-            bindings = <&none>;
+            bindings = <&kp LCTRL>;
             key-positions = <50 25>;
         };
 
         l_alt {
-            bindings = <&none>;
+            bindings = <&kp LEFT_ALT>;
             key-positions = <50 26>;
         };
 
         l_gui {
-            bindings = <&none>;
+            bindings = <&kp LEFT_GUI>;
             key-positions = <50 27>;
         };
 
         l_shift {
-            bindings = <&none>;
+            bindings = <&kp LEFT_SHIFT>;
             key-positions = <28 50>;
         };
 
         r_ctrl {
-            bindings = <&none>;
+            bindings = <&kp RCTRL>;
             key-positions = <50 34>;
         };
 
         r_alt {
-            bindings = <&none>;
+            bindings = <&kp RIGHT_ALT>;
             key-positions = <50 33>;
         };
 
         r_gui {
-            bindings = <&none>;
+            bindings = <&kp RIGHT_GUI>;
             key-positions = <50 32>;
         };
 
         r_shift {
-            bindings = <&none>;
+            bindings = <&kp RIGHT_SHIFT>;
             key-positions = <31 50>;
         };
     };
