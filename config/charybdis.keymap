@@ -319,7 +319,7 @@
             bindings = <
 &kp GRAVE   &kp EXCLAMATION   &kp AT_SIGN          &kp HASH            &kp DOLLAR             &kp PERCENT      &kp CARET    &kp AMPERSAND               &kp ASTERISK             &kp MINUS                &kp EQUAL      &kp NON_US_BACKSLASH
 &kp ESCAPE  &kp F1            &kp F2               &kp F3              &kp F4                 &kp F5           &kp F6       &kp F7                      &kp F8                   &kp F9                   &kp F10        &kp F11
-&trans      &hml LCTRL EQUAL  &hml LEFT_ALT COLON  &hml LEFT_GUI PLUS  &hml LEFT_SHIFT SLASH  &kp HASH         &dollar      &hmr RIGHT_SHIFT BACKSLASH  &hmruc RIGHT_GUI unicode_question  &hmr RIGHT_ALT NUMBER_6  &hmr RCTRL N0  &kp F12
+&trans      &hml LCTRL EQUAL  &hml LEFT_ALT COLON  &hml LEFT_GUI PLUS  &hml LEFT_SHIFT SLASH  &kp HASH         &dollar      &hmr RIGHT_SHIFT BACKSLASH  &hmruc RIGHT_GUI &unicode_question  &hmr RIGHT_ALT NUMBER_6  &hmr RCTRL N0  &kp F12
 &uc UC_UP_ARROWHEAD   &kp PERCENT       &kp ASTERISK         &kp MINUS           &unicode_question           &kp AMPERSAND    &kp AT_SIGN  &kp DOUBLE_QUOTES           &kp EXCLAMATION          &kp NUMBER_3             &kp DOT        &kp UNDERSCORE
                                                    &trans              &trans                 &trans           &trans       &trans
                                                                        &trans                 &trans           &trans
