@@ -4,7 +4,7 @@
 #include <behaviors/unicode.dtsi>
 #define CHARYBDIS_AUTO_SNIPING_ON_LAYER 2
 #define UC_UP_ARROWHEAD 0x2303 0  // ⌃
-#define UC_QUESTION_MARK 0x3F  0     // ?
+#define UC_QUESTION_MARK 0x3F 0 // ?
 &lt {
     tapping-term-ms = <200>;
     flavor = "balanced";
