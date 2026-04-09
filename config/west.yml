@@ -7,7 +7,7 @@ manifest:
     - name: badjeff
       url-base: https://github.com/badjeff
     - name: urob
-      url-base: https://github.com/urob/zmk-unicode
+      url-base: https://github.com/urob
   projects:
     - name: zmk
       remote: zmkfirmware
