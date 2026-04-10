@@ -334,8 +334,8 @@
 
         Code_4 {
             bindings = <
-&uc UC_GRAVE_ACCENT   &kp EXCLAMATION   &kp AT_SIGN             &kp HASH            &kp DOLLAR            &kp PERCENT      &kp CARET             &kp AMPERSAND           &kp ASTERISK               &kp MINUS                 &kp EQUAL                &kp NON_US_BACKSLASH
-&kp ESCAPE  &kp F1            &kp F2                  &kp F3              &kp F4                &kp F5           &kp F6                &kp F7                  &kp F8                     &kp F9                    &kp F10                  &kp F11
+&kp ESCAPE   &kp EXCLAMATION   &kp AT_SIGN             &kp HASH            &kp DOLLAR            &kp PERCENT      &kp CARET             &kp AMPERSAND           &kp ASTERISK               &kp MINUS                 &kp EQUAL                &kp NON_US_BACKSLASH
+&uc UC_GRAVE_ACCENT  &kp F1            &kp F2                  &kp F3              &kp F4                &kp F5           &kp F6                &kp F7                  &kp F8                     &kp F9                    &kp F10                  &kp F11
 &uc UC_TILDE   &hml LCTRL EQUAL  &hml LEFT_ALT ASTERISK  &hml LEFT_GUI PLUS  &hml LEFT_SHIFT HASH  &uc UC_SOLIDUS        &kp NON_US_BACKSLASH  &hmr LEFT_SHIFT DOLLAR  &hmr LEFT_GUI EXCLAMATION  &hmr LEFT_ALT UNDERSCORE  &hmr LEFT_CONTROL MINUS  &kp F12
 &kp CARET   &kp PERCENT       &uc UC_COLON               &uc UC_SEMICOLON       &uc UC_VERTICAL_LINE              &kp AMPERSAND    &kp AT_SIGN           &uc UC_QUOTATION_MARK       &uc UC_COMMA                  &uc UC_FULL_STOP                &uc UC_QUESTION_MARK             &uc UC_APOSTROPHE
                                                       &trans              &trans                &trans           &trans                &trans
