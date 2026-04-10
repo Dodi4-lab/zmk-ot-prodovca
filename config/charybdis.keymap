@@ -17,7 +17,6 @@
 #define UC_SOLIDUS               0x2F  0     // /
 #define UC_GRAVE_ACCENT          0x60  0     // `
 
-
 &lt {
     tapping-term-ms = <200>;
     flavor = "balanced";
