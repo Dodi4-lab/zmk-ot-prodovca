@@ -323,12 +323,12 @@
 
         Code_4 {
             bindings = <
-&kp GRAVE   &kp EXCLAMATION   &kp AT_SIGN          &kp HASH            &kp DOLLAR             &kp PERCENT      &kp CARET    &kp AMPERSAND              &kp ASTERISK               &kp MINUS                   &kp EQUAL                    &kp NON_US_BACKSLASH
-&kp ESCAPE  &kp F1            &kp F2               &kp F3              &kp F4                 &kp F5           &kp F6       &kp F7                     &kp F8                     &kp F9                      &kp F10                      &kp F11
-&kp TILDE   &hml LCTRL EQUAL  &hml LEFT_ALT COLON  &hml LEFT_GUI PLUS  &hml LEFT_SHIFT SLASH  &kp HASH         &kp DOLLAR   &hmr LEFT_SHIFT BACKSLASH  &hmr LEFT_GUI EXCLAMATION  &hmr LEFT_ALT SINGLE_QUOTE  &hmr LEFT_CONTROL SEMICOLON  &kp F12
-&kp CARET   &kp PERCENT       &kp ASTERISK         &kp MINUS           &kp PIPE               &kp AMPERSAND    &kp AT_SIGN  &kp DOUBLE_QUOTES          &kp COMMA                  &kp PERIOD                  &kp EXCLAMATION              &kp UNDERSCORE
-                                                   &trans              &trans                 &trans           &trans       &trans
-                                                                       &trans                 &trans           &trans
+&kp GRAVE   &kp EXCLAMATION   &kp AT_SIGN             &kp HASH            &kp DOLLAR            &kp PERCENT      &kp CARET             &kp AMPERSAND           &kp ASTERISK               &kp MINUS                 &kp EQUAL                &kp NON_US_BACKSLASH
+&kp ESCAPE  &kp F1            &kp F2                  &kp F3              &kp F4                &kp F5           &kp F6                &kp F7                  &kp F8                     &kp F9                    &kp F10                  &kp F11
+&kp TILDE   &hml LCTRL EQUAL  &hml LEFT_ALT ASTERISK  &hml LEFT_GUI PLUS  &hml LEFT_SHIFT HASH  &kp SLASH        &kp NON_US_BACKSLASH  &hmr LEFT_SHIFT DOLLAR  &hmr LEFT_GUI EXCLAMATION  &hmr LEFT_ALT UNDERSCORE  &hmr LEFT_CONTROL MINUS  &kp F12
+&kp CARET   &kp PERCENT       &kp COLON               &kp SEMICOLON       &kp PIPE              &kp AMPERSAND    &kp AT_SIGN           &kp DOUBLE_QUOTES       &kp COMMA                  &kp PERIOD                &kp QUESTION             &kp SINGLE_QUOTE
+                                                      &trans              &trans                &trans           &trans                &trans
+                                                                          &trans                &trans           &trans
             >;
         };
 
