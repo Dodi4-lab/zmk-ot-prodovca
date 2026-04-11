@@ -415,6 +415,16 @@
     };
 
     behaviors {
+        tb_mode: trackball_mode {
+            compatible = "zmk,behavior-trackball-mode";
+            #binding-cells = <1>;
+            default-mode = <0>; /* 0=move, 1=scroll */
+            /* Опционально: цвета светодиода */
+            led-mode-move = <2>;  /* Зеленый */
+            led-mode-scroll = <3>; /* Синий */
+        };
+
+
         hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
             label = "HMR";
