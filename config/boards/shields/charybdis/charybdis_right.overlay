@@ -80,7 +80,7 @@
 
         /*   optional features   */
         // snipe-layers = <1>;
-        //scroll-layers = <2 3>;
+        scroll-layers = <4>;
         // automouse-layer = <4>;
     };
 };
@@ -89,17 +89,7 @@
   trackball_listener {
     compatible = "zmk,input-listener";
     device = <&trackball>;
-    input-processors = <&zip_xy_scaler 5 5>;  /* базовый скейлер для курсора */
-    
-    /* Процессор для слоя скролла (номер слоя укажите свой) */
-    scroller {
-        layers = <4>;  /* Замените 8 на номер вашего слоя скролла */
-        input-processors = <
-            &zip_xy_scaler 1 15                /* Скорость прокрутки */
-            &zip_xy_to_scroll_mapper            /* XY → Scroll */
-            &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT  /* Инверсия Y (опционально) */
-        >;
-    };
+
   };
 };
 
