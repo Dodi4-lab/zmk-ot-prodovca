@@ -89,7 +89,16 @@
   trackball_listener {
     compatible = "zmk,input-listener";
     device = <&trackball>;
-
+    input-processors = <&zip_xy_scaler 5 5>;    
+    /* Процессор для слоя скролла (например, слой 8) */
+    scroller: scroller {
+        layers = <8>; /* Номер твоего слоя для скролла */
+        input-processors = <
+            &zip_xy_scaler 1 15          /* Скейлер для настройки скорости */
+            &zip_xy_to_scroll_mapper      /* Главный процессор: XY -> скролл */
+            &zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT) /* Инверсия скролла (по желанию) */
+        >;
+    };
   };
 };
 
