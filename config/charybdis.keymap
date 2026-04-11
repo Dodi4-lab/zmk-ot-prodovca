@@ -64,24 +64,24 @@
         };
 
         skoba3 {
-            bindings = <&kp LEFT_BRACE>;
+            bindings = <&LEFT_CURLY_BRACKET>;
             key-positions = <16 15>;
             layers = <0 2>;
         };
 
         skoba_4 {
-            bindings = <&kp RIGHT_BRACE>;
+            bindings = <&RIGHT_CURLY_BRACKET>;
             key-positions = <19 20>;
         };
 
         skoba_5 {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&LEFT_SQUARE_BRACKET>;
             key-positions = <40 39>;
             layers = <0 2>;
         };
 
         skoba_6 {
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&RIGHT_SQUARE_BRACKET>;
             key-positions = <43 44>;
             layers = <0 2>;
         };
@@ -412,10 +412,65 @@
 
             label = "GREATER";
         };
+
+        LEFT_SQUARE_BRACKET: LEFT_SQUARE_BRACKET {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_1>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "LEFT_SQUARE_BRACKET";
+        };
+
+        RIGHT_SQUARE_BRACKET: RIGHT_SQUARE_BRACKET {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "RIGHT_SQUARE_BRACKET";
+        };
+
+        LEFT_CURLY_BRACKET: LEFT_CURLY_BRACKET {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "LEFT_CURLY_BRACKET";
+        };
+
+        RIGHT_CURLY_BRACKET: RIGHT_CURLY_BRACKET {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_5>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "RIGHT_CURLY_BRACKET";
+        };
     };
 
     behaviors {
-
         hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
             label = "HMR";
