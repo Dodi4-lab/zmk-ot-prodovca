@@ -551,12 +551,12 @@
 
         Code_4 {
             bindings = <
-&kp ESCAPE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp DOLLAR      &kp PERCENT      &kp CARET             &kp AMPERSAND    &kp ASTERISK     &kp MINUS       &kp EQUAL   &kp NON_US_BACKSLASH
-&grave      &kp F1           &kp F2        &kp F3     &kp F4          &kp F5           &kp F6                &kp F7           &kp F8           &kp F9          &kp F10     &kp F11
-&tilda      &kp EQUAL        &kp ASTERISK  &kp PLUS   &kp HASH        &solidus         &kp NON_US_BACKSLASH  &kp DOLLAR       &kp EXCLAMATION  &kp UNDERSCORE  &semicolon  &apostrophe
-&kp CARET   &kp PERCENT      &colon        &kp MINUS  &vertical_line  &kp AMPERSAND    &kp AT_SIGN           &quotation_mark  &comma           &dot            &question   &kp F12
-                                           &trans     &trans          &trans           &trans                &trans
-                                                      &trans          &trans           &trans
+&kp LS(GRAVE)  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp DOLLAR      &kp PERCENT      &kp CARET             &kp AMPERSAND    &kp ASTERISK     &kp MINUS       &kp EQUAL   &kp NON_US_BACKSLASH
+&grave         &kp F1           &kp F2        &kp F3     &kp F4          &kp F5           &kp F6                &kp F7           &kp F8           &kp F9          &kp F10     &kp F11
+&tilda         &kp EQUAL        &kp ASTERISK  &kp PLUS   &kp HASH        &solidus         &kp NON_US_BACKSLASH  &kp DOLLAR       &kp EXCLAMATION  &kp UNDERSCORE  &semicolon  &apostrophe
+&kp CARET      &kp PERCENT      &colon        &kp MINUS  &vertical_line  &kp AMPERSAND    &kp AT_SIGN           &quotation_mark  &comma           &dot            &question   &kp F12
+                                              &trans     &trans          &trans           &trans                &trans
+                                                         &trans          &trans           &trans
             >;
         };
 
