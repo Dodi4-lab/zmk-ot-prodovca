@@ -101,16 +101,6 @@
             key-positions = <37 40>;
         };
 
-        ctrlZ {
-            bindings = <&kp LC(Z)>;
-            key-positions = <25 26>;
-        };
-
-        shiftCtrlZ {
-            bindings = <&kp LS(LC(Z))>;
-            key-positions = <37 38>;
-        };
-
         buttom_ {
             bindings = <&kp UNDERSCORE>;
             key-positions = <13 14>;
