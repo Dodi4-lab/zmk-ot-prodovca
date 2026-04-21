@@ -52,12 +52,14 @@
         };
 
         skoba1 {
+            timeout-ms = <25>;
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <28 27>;
             layers = <0 2>;
         };
 
         skoba2 {
+            timeout-ms = <25>;
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <31 32>;
             layers = <0 2>;
