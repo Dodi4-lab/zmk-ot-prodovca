@@ -103,16 +103,6 @@
             key-positions = <37 40>;
         };
 
-        ctrlZ {
-            bindings = <&kp LC(Z)>;
-            key-positions = <25 26>;
-        };
-
-        shiftCtrlZ {
-            bindings = <&kp LS(LC(Z))>;
-            key-positions = <37 38>;
-        };
-
         buttom_ {
             bindings = <&kp UNDERSCORE>;
             key-positions = <13 14>;
@@ -184,23 +174,28 @@
         };
 
         r_ctrl {
-            bindings = <&kp RCTRL>;
+            bindings = <&kp LEFT_CONTROL>;
             key-positions = <50 34>;
         };
 
         r_alt {
-            bindings = <&kp RIGHT_ALT>;
+            bindings = <&kp LEFT_ALT>;
             key-positions = <50 33>;
         };
 
         r_gui {
-            bindings = <&kp RIGHT_GUI>;
+            bindings = <&kp LEFT_GUI>;
             key-positions = <50 32>;
         };
 
         r_shift {
-            bindings = <&kp RIGHT_SHIFT>;
+            bindings = <&kp LEFT_SHIFT>;
             key-positions = <31 50>;
+        };
+
+        capslock {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <36 28 31>;
         };
     };
 
@@ -542,32 +537,32 @@
 
         layer_6 {
             bindings = <
-&kp ESCAPE      &kp NUMBER_1         &kp NUMBER_2     &kp NUMBER_3     &kp NUMBER_4       &kp N5            &kp NUMBER_6  &kp N7             &kp N8           &kp N9           &kp N0                       &kp NON_US_BACKSLASH
-&kp TAB         &kp Q                &kp W            &kp E            &kp R              &kp T             &kp Y         &kp U              &kp I            &kp O            &kp P                        &kp LEFT_BRACKET
-&kp DELETE      &hml LEFT_CONTROL A  &hml LEFT_ALT S  &hml LEFT_GUI D  &hml LEFT_SHIFT F  &kp G             &kp H         &hmr LEFT_SHIFT J  &hmr LEFT_GUI K  &hmr LEFT_ALT L  &hmr LEFT_CONTROL SEMICOLON  &kp APOSTROPHE
-&kp LEFT_SHIFT  &kp Z                &kp X            &kp C            &kp V              &kp B             &kp N         &kp M              &kp COMMA        &kp DOT          &kp SLASH                    &kp RIGHT_BRACKET
-                                                      &kp TAB          &kp SPACE          &lt 3 CAPSLOCK    &lt 2 ENTER   &kp BACKSPACE
-                                                                       &mkp RCLK          &mkp LCLK         &mo 3
+&kp ESCAPE      &kp NUMBER_1         &kp NUMBER_2     &kp NUMBER_3      &kp NUMBER_4       &kp N5            &kp NUMBER_6  &kp N7             &kp N8           &kp N9           &kp N0                       &kp NON_US_BACKSLASH
+&kp TAB         &kp Q                &kp W            &kp E             &kp R              &kp T             &kp Y         &kp U              &kp I            &kp O            &kp P                        &kp LEFT_BRACKET
+&kp DELETE      &hml LEFT_CONTROL A  &hml LEFT_ALT S  &hml LEFT_GUI D   &hml LEFT_SHIFT F  &kp G             &kp H         &hmr LEFT_SHIFT J  &hmr LEFT_GUI K  &hmr LEFT_ALT L  &hmr LEFT_CONTROL SEMICOLON  &kp APOSTROPHE
+&kp LEFT_SHIFT  &kp Z                &kp X            &kp C             &kp V              &kp B             &kp N         &kp M              &kp COMMA        &kp DOT          &kp SLASH                    &kp RIGHT_BRACKET
+                                                      &kp LEFT_CONTROL  &kp SPACE          &lt 3 CAPSLOCK    &lt 2 ENTER   &kp BACKSPACE
+                                                                        &mkp RCLK          &mkp LCLK         &mo 3
             >;
         };
 
         Code_4 {
             bindings = <
-&kp ESCAPE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp DOLLAR      &kp PERCENT      &kp CARET             &kp AMPERSAND           &kp ASTERISK               &kp MINUS                 &kp EQUAL   &kp NON_US_BACKSLASH
-&grave      &kp F1           &kp F2        &kp F3     &kp F4          &kp F5           &kp F6                &kp F7                  &kp F8                     &kp F9                    &kp F10     &kp F11
-&tilda      &kp EQUAL        &kp ASTERISK  &kp PLUS   &kp HASH        &solidus         &kp NON_US_BACKSLASH  &hmr LEFT_SHIFT DOLLAR  &hmr LEFT_GUI EXCLAMATION  &hmr LEFT_ALT UNDERSCORE  &semicolon  &apostrophe
-&kp CARET   &kp PERCENT      &colon        &kp MINUS  &vertical_line  &kp AMPERSAND    &kp AT_SIGN           &quotation_mark         &comma                     &dot                      &question   &kp F12
-                                           &trans     &trans          &trans           &trans                &trans
-                                                      &trans          &trans           &trans
+&kp LS(GRAVE)  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp DOLLAR      &kp PERCENT      &kp CARET             &kp AMPERSAND    &kp ASTERISK     &kp MINUS       &kp EQUAL   &kp NON_US_BACKSLASH
+&grave         &kp F1           &kp F2        &kp F3     &kp F4          &kp F5           &kp F6                &kp F7           &kp F8           &kp F9          &kp F10     &kp F11
+&tilda         &kp EQUAL        &kp ASTERISK  &kp PLUS   &kp HASH        &solidus         &kp NON_US_BACKSLASH  &kp DOLLAR       &kp EXCLAMATION  &kp UNDERSCORE  &semicolon  &apostrophe
+&kp CARET      &kp PERCENT      &colon        &kp MINUS  &vertical_line  &kp AMPERSAND    &kp AT_SIGN           &quotation_mark  &comma           &dot            &question   &kp F12
+                                              &trans     &trans          &trans           &trans                &trans
+                                                         &trans          &trans           &trans
             >;
         };
 
         code_mouse_5 {
             bindings = <
-&trans  &trans  &trans      &kp PAGE_UP    &trans         &trans            &trans          &trans                        &kp PAGE_UP                 &trans                      &trans                  &trans
-&trans  &trans  &kp DELETE  &kp UP_ARROW   &kp BACKSPACE  &trans            &trans          &kp KP_NUMBER_7               &kp KP_NUMBER_8             &kp KP_NUMBER_9             &trans                  &trans
-&trans  &trans  &kp LEFT    &kp DOWN       &kp RIGHT      &msc SCRL_UP      &kp KP_NUMLOCK  &hmr RIGHT_SHIFT KP_NUMBER_4  &hmr RIGHT_GUI KP_NUMBER_5  &hmr RIGHT_ALT KP_NUMBER_6  &hmr RCTRL KP_NUMBER_0  &trans
-&trans  &trans  &kp HOME    &kp PAGE_DOWN  &kp END        &msc SCRL_DOWN    &trans          &kp KP_NUMBER_1               &kp KP_NUMBER_2             &kp KP_NUMBER_3             &trans                  &trans
+&trans  &trans  &trans      &kp PAGE_UP    &trans         &trans            &trans          &trans           &kp PAGE_UP      &trans           &trans           &trans
+&trans  &trans  &kp DELETE  &kp UP_ARROW   &kp BACKSPACE  &trans            &trans          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans           &trans
+&trans  &trans  &kp LEFT    &kp DOWN       &kp RIGHT      &msc SCRL_UP      &kp KP_NUMLOCK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0  &trans
+&trans  &trans  &kp HOME    &kp PAGE_DOWN  &kp END        &msc SCRL_DOWN    &trans          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans           &trans
                             &trans         &trans         &trans            &trans          &trans
                                            &trans         &trans            &trans
             >;
