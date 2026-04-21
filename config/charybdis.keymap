@@ -36,19 +36,19 @@
         compatible = "zmk,combos";
 
         cb_func_layer {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&mo 4>;
             key-positions = <48 53>;
         };
 
         switch_mode {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&tog 0>;
             key-positions = <55 11>;
         };
 
         tilda {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&kp GRAVE>;
             key-positions = <1 14>;
             layers = <0 2>;
@@ -69,162 +69,177 @@
         };
 
         skoba3 {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&LEFT_CURLY_BRACKET>;
             key-positions = <16 15>;
             layers = <0 2>;
         };
 
         skoba_4 {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&RIGHT_CURLY_BRACKET>;
             key-positions = <19 20>;
         };
 
         skoba_5 {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&LEFT_SQUARE_BRACKET>;
             key-positions = <40 39>;
             layers = <0 2>;
         };
 
         skoba_6 {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&RIGHT_SQUARE_BRACKET>;
             key-positions = <43 44>;
             layers = <0 2>;
         };
 
         ctrlC {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&kp LC(C)>;
             key-positions = <37 39>;
         };
 
         ctrlX {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&kp LC(X)>;
             key-positions = <37 38>;
         };
 
         cttrlV {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&kp LC(V)>;
             key-positions = <37 40>;
         };
 
         buttom_ {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&kp UNDERSCORE>;
             key-positions = <13 14>;
         };
 
         minusa- {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&kp MINUS>;
             key-positions = <14 15>;
         };
 
         lesserThan {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&lesser>;
             key-positions = <3 4>;
         };
 
         greaterThan {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&greater>;
             key-positions = <7 8>;
         };
 
         space {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&kp SPACE>;
             key-positions = <26 27>;
         };
 
         space2 {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&kp SPACE>;
             key-positions = <33 32>;
         };
 
         del {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&kp DELETE>;
             key-positions = <38 39>;
         };
 
         backspace {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&kp BACKSPACE>;
             key-positions = <44 45>;
         };
 
         enter {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&kp ENTER>;
             key-positions = <20 21>;
         };
 
         f12 {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&kp F12>;
             key-positions = <10 11>;
         };
 
         l_ctrl {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&kp LCTRL>;
             key-positions = <50 25>;
         };
 
         l_alt {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&kp LEFT_ALT>;
             key-positions = <50 26>;
         };
 
         l_gui {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&kp LEFT_GUI>;
             key-positions = <50 27>;
         };
 
         l_shift {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <28 50>;
         };
 
         r_ctrl {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <50 34>;
         };
 
         r_alt {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&kp LEFT_ALT>;
             key-positions = <50 33>;
         };
 
         r_gui {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&kp LEFT_GUI>;
             key-positions = <50 32>;
         };
 
         r_shift {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <31 50>;
         };
 
         capslock {
-            timeout-ms = <25>;            
+            timeout-ms = <25>;
             bindings = <&kp CAPSLOCK>;
             key-positions = <36 28 31>;
+        };
+
+        alt_right_side {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <33 34>;
+        };
+
+        shift_right_side {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <21 22>;
+        };
+
+        ctrl_right_side {
+            bindings = <&kp LCTRL>;
+            key-positions = <45 46>;
         };
     };
 
