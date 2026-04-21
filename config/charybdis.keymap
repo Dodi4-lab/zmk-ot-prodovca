@@ -228,16 +228,19 @@
         };
 
         alt_right_side {
+            timeout-ms = <25>;
             bindings = <&kp LEFT_ALT>;
             key-positions = <33 34>;
         };
 
         shift_right_side {
+            timeout-ms = <25>;
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <21 22>;
         };
 
         ctrl_right_side {
+            timeout-ms = <25>;
             bindings = <&kp LCTRL>;
             key-positions = <45 46>;
         };
