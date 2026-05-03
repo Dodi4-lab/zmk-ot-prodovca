@@ -323,6 +323,8 @@
 
         colon: colon {
             compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;               
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
