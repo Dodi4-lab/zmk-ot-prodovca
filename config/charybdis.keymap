@@ -281,6 +281,8 @@
 
         question: question {
             compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;              
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -295,6 +297,8 @@
 
         tilda: tilda {
             compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;               
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -309,6 +313,8 @@
 
         vertical_line: vertical_line {
             compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;               
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -339,6 +345,8 @@
 
         semicolon: semicolon {
             compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;               
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -353,6 +361,8 @@
 
         dot: dot {
             compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;               
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -367,6 +377,8 @@
 
         comma: comma {
             compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;               
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -381,6 +393,8 @@
 
         apostrophe: apostrophe {
             compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;               
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -395,6 +409,8 @@
 
         quotation_mark: quotation_mark {
             compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;               
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -409,6 +425,8 @@
 
         solidus: solidus {
             compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;               
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -423,6 +441,8 @@
 
         grave: grave {
             compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;               
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -437,6 +457,8 @@
 
         lesser: lesser {
             compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;               
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -451,6 +473,8 @@
 
         greater: greater {
             compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;               
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -465,6 +489,8 @@
 
         LEFT_SQUARE_BRACKET: LEFT_SQUARE_BRACKET {
             compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;               
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -479,6 +505,8 @@
 
         RIGHT_SQUARE_BRACKET: RIGHT_SQUARE_BRACKET {
             compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;               
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -493,6 +521,8 @@
 
         LEFT_CURLY_BRACKET: LEFT_CURLY_BRACKET {
             compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;               
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -507,6 +537,8 @@
 
         RIGHT_CURLY_BRACKET: RIGHT_CURLY_BRACKET {
             compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;               
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
