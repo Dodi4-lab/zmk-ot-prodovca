@@ -250,7 +250,7 @@
         copyright_symbol: copyright_symbol {
             compatible = "zmk,behavior-macro";
             wait-ms = <0>;
-            tap-ms = <0>;            
+            tap-ms = <0>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -266,7 +266,7 @@
         dollar: dollar {
             compatible = "zmk,behavior-macro";
             wait-ms = <0>;
-            tap-ms = <0>;               
+            tap-ms = <0>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -282,7 +282,7 @@
         question: question {
             compatible = "zmk,behavior-macro";
             wait-ms = <0>;
-            tap-ms = <0>;              
+            tap-ms = <0>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -298,7 +298,7 @@
         tilda: tilda {
             compatible = "zmk,behavior-macro";
             wait-ms = <0>;
-            tap-ms = <0>;               
+            tap-ms = <0>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -314,7 +314,7 @@
         vertical_line: vertical_line {
             compatible = "zmk,behavior-macro";
             wait-ms = <0>;
-            tap-ms = <0>;               
+            tap-ms = <0>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -330,7 +330,7 @@
         colon: colon {
             compatible = "zmk,behavior-macro";
             wait-ms = <0>;
-            tap-ms = <0>;               
+            tap-ms = <0>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -346,7 +346,7 @@
         semicolon: semicolon {
             compatible = "zmk,behavior-macro";
             wait-ms = <0>;
-            tap-ms = <0>;               
+            tap-ms = <0>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -362,7 +362,7 @@
         dot: dot {
             compatible = "zmk,behavior-macro";
             wait-ms = <0>;
-            tap-ms = <0>;               
+            tap-ms = <0>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -378,7 +378,7 @@
         comma: comma {
             compatible = "zmk,behavior-macro";
             wait-ms = <0>;
-            tap-ms = <0>;               
+            tap-ms = <0>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -394,7 +394,7 @@
         apostrophe: apostrophe {
             compatible = "zmk,behavior-macro";
             wait-ms = <0>;
-            tap-ms = <0>;               
+            tap-ms = <0>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -410,7 +410,7 @@
         quotation_mark: quotation_mark {
             compatible = "zmk,behavior-macro";
             wait-ms = <0>;
-            tap-ms = <0>;               
+            tap-ms = <0>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -426,7 +426,7 @@
         solidus: solidus {
             compatible = "zmk,behavior-macro";
             wait-ms = <0>;
-            tap-ms = <0>;               
+            tap-ms = <0>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -442,7 +442,7 @@
         grave: grave {
             compatible = "zmk,behavior-macro";
             wait-ms = <0>;
-            tap-ms = <0>;               
+            tap-ms = <0>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -458,7 +458,7 @@
         lesser: lesser {
             compatible = "zmk,behavior-macro";
             wait-ms = <0>;
-            tap-ms = <0>;               
+            tap-ms = <0>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -474,7 +474,7 @@
         greater: greater {
             compatible = "zmk,behavior-macro";
             wait-ms = <0>;
-            tap-ms = <0>;               
+            tap-ms = <0>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -490,7 +490,7 @@
         LEFT_SQUARE_BRACKET: LEFT_SQUARE_BRACKET {
             compatible = "zmk,behavior-macro";
             wait-ms = <0>;
-            tap-ms = <0>;               
+            tap-ms = <0>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -506,7 +506,7 @@
         RIGHT_SQUARE_BRACKET: RIGHT_SQUARE_BRACKET {
             compatible = "zmk,behavior-macro";
             wait-ms = <0>;
-            tap-ms = <0>;               
+            tap-ms = <0>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -522,7 +522,7 @@
         LEFT_CURLY_BRACKET: LEFT_CURLY_BRACKET {
             compatible = "zmk,behavior-macro";
             wait-ms = <0>;
-            tap-ms = <0>;               
+            tap-ms = <0>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -538,7 +538,7 @@
         RIGHT_CURLY_BRACKET: RIGHT_CURLY_BRACKET {
             compatible = "zmk,behavior-macro";
             wait-ms = <0>;
-            tap-ms = <0>;               
+            tap-ms = <0>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -645,7 +645,7 @@
         code_mouse_5 {
             bindings = <
 &trans  &trans  &trans      &kp PAGE_UP    &trans         &trans            &trans          &trans           &kp PAGE_UP      &trans           &trans           &trans
-&trans  &trans  &kp DELETE  &kp UP_ARROW   &kp BACKSPACE  &trans            &greater        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp COLON        &kp SEMICOLON
+&trans  &none   &kp DELETE  &kp UP_ARROW   &kp BACKSPACE  &trans            &greater        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp COLON        &kp SEMICOLON
 &trans  &trans  &kp LEFT    &kp DOWN       &kp RIGHT      &msc SCRL_UP      &kp KP_NUMLOCK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0  &trans
 &trans  &trans  &kp HOME    &kp PAGE_DOWN  &kp END        &msc SCRL_DOWN    &lesser         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD       &kp COMMA
                             &trans         &trans         &trans            &trans          &trans
