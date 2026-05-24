@@ -84,14 +84,14 @@
         skoba_5 {
             timeout-ms = <25>;
             bindings = <&LEFT_SQUARE_BRACKET>;
-            key-positions = <40 39>;
+            key-positions = <3 4>;
             layers = <0 2>;
         };
 
         skoba_6 {
             timeout-ms = <25>;
             bindings = <&RIGHT_SQUARE_BRACKET>;
-            key-positions = <43 44>;
+            key-positions = <7 8>;
             layers = <0 2>;
         };
 
@@ -128,13 +128,13 @@
         lesserThan {
             timeout-ms = <25>;
             bindings = <&lesser>;
-            key-positions = <3 4>;
+            key-positions = <39 40>;
         };
 
         greaterThan {
             timeout-ms = <25>;
             bindings = <&greater>;
-            key-positions = <7 8>;
+            key-positions = <43 44>;
         };
 
         space {
