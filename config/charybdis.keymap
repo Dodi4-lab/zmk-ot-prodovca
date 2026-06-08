@@ -244,6 +244,11 @@
             bindings = <&kp LCTRL>;
             key-positions = <45 46>;
         };
+
+        to_layer_3 {
+            bindings = <&mo 3>;
+            key-positions = <50 54>;
+        };
     };
 
     macros {
