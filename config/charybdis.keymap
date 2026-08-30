@@ -249,6 +249,21 @@
             bindings = <&mo 3>;
             key-positions = <50 54>;
         };
+
+        ToScrollMode {
+            bindings = <&mo 3>;
+            key-positions = <34 33 32>;
+        };
+
+        lkm_right {
+            bindings = <&mkp LCLK>;
+            key-positions = <31 32 33>;
+        };
+
+        rkm_right {
+            bindings = <&mkp RCLK>;
+            key-positions = <43 44 45>;
+        };
     };
 
     macros {
